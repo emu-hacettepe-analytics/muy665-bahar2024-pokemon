@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "XX Takımı Analitik Labı"
+  title: "Pokemon Takımı Analitik Labı"
   navbar:
     search: true
     left:
@@ -36,10 +36,6 @@ website:
       search: true
       contents:
         - takim.qmd
-        - takim/dusantadic.qmd
-        - takim/edindzeko.qmd
-        - takim/fred.qmd  
-        - takim/szymanski.qmd  
         
         
   page-navigation: true
@@ -58,4 +54,5 @@ format:
 
 
 editor: visual
+
 

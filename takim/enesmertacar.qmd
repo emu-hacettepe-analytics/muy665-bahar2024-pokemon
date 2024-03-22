@@ -1,0 +1,34 @@
+---
+title: "Susku UZUN"
+---
+
+![](/assets/images/vesikalik.jpeg){fig-align="center"}
+
+# Eğitim
+
+-   Lisans, ................................., .................................... Üniversitesi, Türkiye, 20xx - 20xx.
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 20xx - devam ediyor.
+
+# İş Deneyimi
+
+## İşler
+
+1.  Firma xxx, pozisyon xx, yıl xxx
+
+2.  Firma yyy, pozisyon yyy, yıl yyy
+
+## Stajlar
+
+1.  Firma aaa, pozisyon xx, yıl xxx
+
+2.  Firma bbb, pozisyon yyy, yıl yyy
+
+# Projeler
+
+1.  TÜBİTAK 1001..........................
+
+# Yetkinlikler
+
+R, Quarto, Git, Python
+
+# Hobiler

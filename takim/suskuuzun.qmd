@@ -1,0 +1,44 @@
+---
+title: "Susku UZUN"
+---
+
+![](/assets/images/vesikalik-susku.jpg){fig-align="center" width="173"}
+
+# Eğitim
+
+-   Lisans, Bilgisayar Mühendisliği, Atatürk Üniversitesi, Türkiye, 2013 - 2019.
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2023 - devam ediyor.
+
+# İş Deneyimi
+
+## İşler
+
+1.  Simsoft Bilgisayar Teknolojileri Ltd. Şti, Proje Mühendisi, 2019-devam ediyor - ***ANKARA***
+
+    -   *Savunma sanayi yazılım geliştirme projelerinde proje yönetimi süreçlerinin planlanması, koordinasyonu ve yönetilmesi,*
+
+    -   *Üst yüklenici koordinasyonunu sağlayarak süreçlerin hızlı ve doğru ilerlemesinin sağlanması,*
+
+    -   *Risk ve Fırsat Analizi süreçlerinin Redmine yazılımı ile yönetilmesi,*
+
+    -   *Scrum metodolojisi ile yürütülen projelerde Daily Scrum, Sprint Planlama, Sprint Kapanış ve Retrospektif toplantı katılımları ve koordinasyonu,*
+
+    -   Proje İş tanımları gereklerine uygun olarak proje takviminin oluşturulması,
+
+    -   *Gereksinim, Hata ve Konfigürasyon Yönetim Araçlarının kullanılması (SVN, Redmine, MS Project, MS Visio)*
+
+    -   *Proje yaşam döngüsü boyunca takip edilecek olan yazılım kalifikasyon birimlerinin proje ekipleri ile koordinasyonu sağlayarak sürece uygun yönetilmesi,*
+
+    -   *MIL-STD-973, DO-178B ve SAE EIA 649 standartlarına uygun olarak konfigürasyon yönetimi faaliyetlerinin gerçekleştirilmesi.*
+
+## Stajlar
+
+1.  RKSOFT Bilişim Teknolojileri A.Ş. , Stajyer , 2018 - ***ANKARA***
+
+2.  Atatürk Üniversitesi Bilgisayar Bilimleri Araştırma ve Uygulama Merkezi , Stajyer , 2016 - ***ERZURUM***
+
+# Yetkinlikler
+
+Redmine, SVN, IBM DOORS, SPSS, Microsoft Office Programları (Word, Powerpoint, Excel, Visio, Project), Java, Python, C, C++, ASP.Net MVC, MsSQL, Linux (Fedora, Ubuntu, Mint).
+
+# 

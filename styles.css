@@ -1,1 +1,31 @@
 /* css styles */
+.navbar-default {
+border-style:none;
+background-color: transparent;
+margin-top:50px;
+}
+.navbar-default .navbar-brand {
+width:130px;
+height:45px;
+background: url(../img/logo.png) no-repeat;
+text-indent: -999em;
+}
+.navbar-default .navbar-nav > li{
+background-color: #87509c;
+border-radius:8px;
+margin-left:10px;
+}
+.navbar-default .navbar-nav > li > a{
+color:#ffffff;
+border-radius:8px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+background-color: #643a79;
+color:#ffffff;
+}
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li.active > a:hover,
+.navbar-default .navbar-nav > li.active > a:focus {
+background-color: #643a79;
+color:#ffffff;
+}

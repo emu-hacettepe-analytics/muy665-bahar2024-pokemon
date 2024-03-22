@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Takım: XXX",
+    "title": "Takım: Pokemon",
     "section": "",
     "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nBu analitik çalışmalarımızı paylaşıyoruz.\nLütfen faaliyetlerimizi görmek için için bizi takipte kalın."
   },
@@ -192,58 +192,51 @@
   {
     "objectID": "index.html#proje-adı",
     "href": "index.html#proje-adı",
-    "title": "Takım: XXX",
+    "title": "Takım: Pokemon",
     "section": "Proje Adı",
     "text": "Proje Adı\nMUY660-İş Analitiği iyileştirme çalışmaları (örnek)"
   },
   {
     "objectID": "index.html#proje-konusu",
     "href": "index.html#proje-konusu",
-    "title": "Takım: XXX",
+    "title": "Takım: Pokemon",
     "section": "Proje Konusu",
     "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
   },
   {
     "objectID": "index.html#veri-seti-hakkında-özet-bilgi",
     "href": "index.html#veri-seti-hakkında-özet-bilgi",
-    "title": "Takım: XXX",
+    "title": "Takım: Pokemon",
     "section": "Veri Seti Hakkında Özet Bilgi",
     "text": "Veri Seti Hakkında Özet Bilgi"
   },
   {
     "objectID": "index.html#sonuçlar",
     "href": "index.html#sonuçlar",
-    "title": "Takım: XXX",
+    "title": "Takım: Pokemon",
     "section": "Sonuçlar",
     "text": "Sonuçlar\nBurada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır."
   },
   {
     "objectID": "index.html#takım-üyeleri",
     "href": "index.html#takım-üyeleri",
-    "title": "Takım: XXX",
+    "title": "Takım: Pokemon",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nSusku UZUN\nEnes Mert ACAR\nMertcan ÇALDAR\nÇağla Hazal MÜVEZZİ\nBahadır AKGÜN\nBelirsiz"
   },
   {
     "objectID": "portfolyo.html",
     "href": "portfolyo.html",
     "title": "Portfolyo",
     "section": "",
-    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top",
-    "crumbs": [
-      "Porfolyo",
-      "Portfolyo"
-    ]
+    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top"
   },
   {
     "objectID": "takim.html",
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Takım Üyeleri"
-    ]
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nSusku UZUN\nEnes Mert ACAR\nMertcan ÇALDAR\nÇağla Hazal MÜVEZZİ\nBahadır AKGÜN\nBelirsiz\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "proje.html",
@@ -488,24 +481,16 @@
   {
     "objectID": "takim/edindzeko.html#işler",
     "href": "takim/edindzeko.html#işler",
-    "title": "Edin_Džeko",
+    "title": "Susku UZUN",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Edin_Džeko"
-    ]
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "takim/edindzeko.html#stajlar",
     "href": "takim/edindzeko.html#stajlar",
-    "title": "Edin_Džeko",
+    "title": "Susku UZUN",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Edin_Džeko"
-    ]
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "takim/fred.html#işler",
@@ -550,5 +535,75 @@
       "Takım Üyeleri",
       "Dusan Tadic"
     ]
+  },
+  {
+    "objectID": "takim/mertcancaldar.html#işler",
+    "href": "takim/mertcancaldar.html#işler",
+    "title": "Frederico Rodrigues",
+    "section": "İşler",
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/mertcancaldar.html#stajlar",
+    "href": "takim/mertcancaldar.html#stajlar",
+    "title": "Frederico Rodrigues",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/caglahazalmuvezzi.html#işler",
+    "href": "takim/caglahazalmuvezzi.html#işler",
+    "title": "Sebastian Szymański",
+    "section": "İşler",
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/caglahazalmuvezzi.html#stajlar",
+    "href": "takim/caglahazalmuvezzi.html#stajlar",
+    "title": "Sebastian Szymański",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/bahadırakgun.html",
+    "href": "takim/bahadırakgun.html",
+    "title": "Pokemon Takımı Analitik Labı",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "takim/belirsiz.html",
+    "href": "takim/belirsiz.html",
+    "title": "Pokemon Takımı Analitik Labı",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "takim/enesmertacar.html#işler",
+    "href": "takim/enesmertacar.html#işler",
+    "title": "Susku UZUN",
+    "section": "İşler",
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/enesmertacar.html#stajlar",
+    "href": "takim/enesmertacar.html#stajlar",
+    "title": "Susku UZUN",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/suskuuzun.html#işler",
+    "href": "takim/suskuuzun.html#işler",
+    "title": "Susku UZUN",
+    "section": "İşler",
+    "text": "İşler\n\nSimsoft Bilgisayar Teknolojileri Ltd. Şti, Proje Mühendisi, 2019-devam ediyor - ANKARA\n\nSavunma sanayi yazılım geliştirme projelerinde proje yönetimi süreçlerinin planlanması, koordinasyonu ve yönetilmesi,\nÜst yüklenici koordinasyonunu sağlayarak süreçlerin hızlı ve doğru ilerlemesinin sağlanması,\nRisk ve Fırsat Analizi süreçlerinin Redmine yazılımı ile yönetilmesi,\nScrum metodolojisi ile yürütülen projelerde Daily Scrum, Sprint Planlama, Sprint Kapanış ve Retrospektif toplantı katılımları ve koordinasyonu,\nProje İş tanımları gereklerine uygun olarak proje takviminin oluşturulması,\nGereksinim, Hata ve Konfigürasyon Yönetim Araçlarının kullanılması (SVN, Redmine, MS Project, MS Visio)\nProje yaşam döngüsü boyunca takip edilecek olan yazılım kalifikasyon birimlerinin proje ekipleri ile koordinasyonu sağlayarak sürece uygun yönetilmesi,\nMIL-STD-973, DO-178B ve SAE EIA 649 standartlarına uygun olarak konfigürasyon yönetimi faaliyetlerinin gerçekleştirilmesi."
+  },
+  {
+    "objectID": "takim/suskuuzun.html#stajlar",
+    "href": "takim/suskuuzun.html#stajlar",
+    "title": "Susku UZUN",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nRKSOFT Bilişim Teknolojileri A.Ş. , Stajyer , 2018 - ANKARA\nAtatürk Üniversitesi Bilgisayar Bilimleri Araştırma ve Uygulama Merkezi , Stajyer , 2016 - ERZURUM"
   }
 ]
