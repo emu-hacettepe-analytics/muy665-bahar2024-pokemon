@@ -23,9 +23,23 @@ title: "Susku UZUN"
 
     -   *Scrum metodolojisi ile yürütülen projelerde Daily Scrum, Sprint Planlama, Sprint Kapanış ve Retrospektif toplantı katılımları ve koordinasyonu,*
 
-    -   Proje İş tanımları gereklerine uygun olarak proje takviminin oluşturulması,
+    -   *Proje İş tanımları gereklerine uygun olarak proje takviminin oluşturulması,*
 
     -   *Gereksinim, Hata ve Konfigürasyon Yönetim Araçlarının kullanılması (SVN, Redmine, MS Project, MS Visio)*
+
+    -   *CMMI Level 3 V2.0, ISO 9001:2015 Kalite Yönetim Sistemleri destek çalışmaları,*
+
+    -   *Konfigürasyon Yönetim Planı’nın oluşturulması, uygulanması ve güncel tutulması,*
+
+    -   *Konfigürasyon Yönetimi faaliyetlerinin proje boyunca idamesi,*
+
+    -   *Sözleşme ve Konfigürasyon Yönetim Planı gereklerine uygun olarak konfigürasyon denetleme faaliyetlerinin yürütülmesi,*
+
+    -   *Etki Analizi kapsamında Mühendislik Değişiklik Süreçlerinin yönetilmesi,*
+
+    -   *Teslim edilen dokümantasyonların takibinin sağlanması ve fiziksel arşivlenmesi,*
+
+    -   *Konfigürasyon Yönetimi süreç ve uygulamalarının iyileştirilmesi çalışmalarına destek olmak,*
 
     -   *Proje yaşam döngüsü boyunca takip edilecek olan yazılım kalifikasyon birimlerinin proje ekipleri ile koordinasyonu sağlayarak sürece uygun yönetilmesi,*
 

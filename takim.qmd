@@ -6,14 +6,14 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 # Takım Üyeleri
 
-1.  [Susku UZUN](/takim/suskuuzun.qmd)
+1.  [Susku UZUN](/takim/suskuuzun.qmd) (Raichu)
 
-2.  [Enes Mert ACAR](/takim/enesmertacar.qmd)
+2.  [Enes Mert ACAR](/takim/enesmertacar.qmd) (Machoke)
 
-3.  [Mertcan ÇALDAR](/takim/mertcancaldar.qmd)
+3.  [Mertcan ÇALDAR](/takim/mertcancaldar.qmd) (Bulbasaur)
 
-4.  [Çağla Hazal MÜVEZZİ](/takim/caglahazalmuvezzi.qmd)
+4.  [Çağla Hazal MÜVEZZİ](/takim/caglahazalmuvezzi.qmd) (Mew)
 
-5.  [Bahadır AKGÜN](/takim/bahadirakgun.qmd)
+5.  [Bahadır AKGÜN](/takim/bahadirakgun.qmd) (Squirtle)
 
 6.  [Belirsiz](/takim/belirsiz.qmd)

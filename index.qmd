@@ -1,25 +1,23 @@
 ---
-title: "Takım: Pokemon"
+title: "POKEMON TAKIMI"
 sidebar: false 
 ---
 
-MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.
+MUY665-İş Analitiği dersi Pokemın Takımı sayfamıza hoş geldiniz.
 
-Bu analitik çalışmalarımızı paylaşıyoruz.
-
-Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.
+**Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.**
 
 ## Takım Üyeleri
 
-1.  [Susku UZUN](/takim/suskuuzun.qmd)
+1.  [Susku UZUN](/takim/suskuuzun.qmd) (Raichu)
 
-2.  [Enes Mert ACAR](/takim/enesmertacar.qmd)
+2.  [Enes Mert ACAR](/takim/enesmertacar.qmd) (Machoke)
 
-3.  [Mertcan ÇALDAR](/takim/mertcancaldar.qmd)
+3.  [Mertcan ÇALDAR](/takim/mertcancaldar.qmd) (Bulbasaur)
 
-4.  [Çağla Hazal MÜVEZZİ](/takim/caglahazalmuvezzi.qmd)
+4.  [Çağla Hazal MÜVEZZİ](/takim/caglahazalmuvezzi.qmd) (Mew)
 
-5.  [Bahadır AKGÜN](/takim/bahadirakgun.qmd)
+5.  [Bahadır AKGÜN](/takim/bahadırakgun.qmd) (Squirtle)
 
 6.  [Belirsiz](/takim/belirsiz.qmd)
 

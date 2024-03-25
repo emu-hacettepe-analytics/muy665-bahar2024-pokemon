@@ -1,39 +1,50 @@
 ---
-title: "Sebastian Szymański"
+title: "Çağla Hazal MÜVEZZİ"
 ---
 
-
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](/assets/images/hazal.PNG){fig-align="center" width="173"}
 
 # Eğitim
 
--   Lisans, ................................., .................................... Üniversitesi, Türkiye, 20xx - 20xx.
--   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 20xx - devam ediyor.
+-   Lisans, Fizik Mühendisliği, Ankara Üniversitesi, Türkiye, 2010 - 2021.
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2023 - devam ediyor.
 
 # İş Deneyimi
 
 ## İşler
 
-1.  Firma xxx, pozisyon xx, yıl xxx
+1.  Simsoft Bilgisayar Teknolojileri, Proje Mühendisi, 2022-devam ediyor
 
-2.  Firma yyy, pozisyon yyy, yıl yyy
+    -   *Proje başlangıç faaliyetleri*
 
-## Stajlar
+    -   *Proje izleme ve kontrol faaliyetleri*
 
-1.  Firma aaa, pozisyon xx, yıl xxx
+    -   *Proje bitimi faaliyetleri*
 
-2.  Firma bbb, pozisyon yyy, yıl yyy
+    -   *MIL-STD-973 ve DO-178B standartlarına uygun olarak konfigürasyon yönetimi faaliyetlerinin gerçekleştirilmesi*
 
-# Projeler
+    -   *Konfigürasyon Yönetim Planı ve Proje Yönetim Planı hazırlanması Etki Analizi – Mühendislik Değişiklik Süreçlerinin yönetilmesi*
 
-1.  TÜBİTAK 1001..........................
+    -   *Konfigürasyon Kontrol Kurulu (KKK) toplantılarının planlanması/yönetilmesi gerçekleştirilmektedir.*
 
-# Yayınlar
+    -   *Simsoft Kalite Yönetim Sistemi kapsamında Süreç İyileştirme ve Geliştirme çalışmaları*
 
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Öztürk, D. (2022) “İHA Yönlendirmesi için Keşif Misyonu: Zaman Bağımlı Ödülleri ve Çoklu Bağlantıları Olan Çok Amaçlı Oryantiring Problemi”, Computers & Operations Research, 145: 105882
+    -   *İç ve Dış tetkik faaliyetleri*
+
+2.  T-Kalıp/T-Mak, Proje Mühendisi, 2021-2022
+
+    *Proje dokümanlarının hazırlanması, proje süreçlerinin takibi ve takvimlendirilmesi, proje teslimat kalemlerine yönelik tasarım doğrulama faaliyetlerinin takibi (test prosedürü ve test raporları hazırlama vb.) süreç ortaklarıyla koordinasyonun sağlanması, paydaşlarla ve müşteriyle ilişkiler*
+
+    -   *T625 (GÖKBEY) Helikopteri için Sönümleme Sistemine Sahip Koltuk Tedariki Projesi*
+
+    -   *T70 (Genel Maksat Helikopter-GMH) Helikopteri için Sönümleme Sistemine Sahip Koltuk Tedariki Projesi*
+
+3.  Meditör Akademik Destek Ofisi, Dönemsel Etüterlik, 2017-2018
+
+4.  Viçem Sağlık Danışmanlık, Ürün Sorumlusu, 2014-2016
 
 # Yetkinlikler
 
-R, Quarto, Git, Python
+Redmine, SVN, AutoCAD, LT Spice, MS Office, C++.
 
-# Hobiler
+# 

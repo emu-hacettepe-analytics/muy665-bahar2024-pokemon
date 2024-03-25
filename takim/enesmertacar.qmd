@@ -1,34 +1,78 @@
 ---
-title: "Susku UZUN"
+title: "Enes Mert ACAR"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](/assets/images/mert-vesikalık.PNG){fig-align="center" width="172"}
 
 # Eğitim
 
--   Lisans, ................................., .................................... Üniversitesi, Türkiye, 20xx - 20xx.
--   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 20xx - devam ediyor.
+-   Lisans, Makine Mühendisliği, Çankaya Üniversitesi, Türkiye, 2013 - 2018.
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2024 - devam ediyor.
 
 # İş Deneyimi
 
 ## İşler
 
-1.  Firma xxx, pozisyon xx, yıl xxx
+1.  Türk Havacılık ve Uzay Sanayii A.Ş., Makine Mühendisi, 2023- devam ediyor.
 
-2.  Firma yyy, pozisyon yyy, yıl yyy
+    -   *Proje için gerçekleşen ve planlanan operasyon sürelerini takip ederek gerekli raporlamaların yapılması,*
+
+    -   *Projelerin iş gücü ve iş yükü çalışmalarının gerçekleştirilmesi,*
+
+    -   *Proje takibinin yapılması ve ilerleme raporlarının hazırlanması,*
+
+    -   *Şirket için kalite metrik oranlarının takibi,kök analizi ve raporlanması,*
+
+    -   *Proje takip konularında yazılım ve sistem desteğinin sağlanması,*
+
+    -   *Proje hazırlık kapsamında üretim çizelgeleri ve çalışılan montaj süreleri,personel sayıları çalışmaları.*
+
+2.  Ankara Büyükşehir Belediyesi – ASKİ, Makine Mühendisi, 2021-2023
+
+    -   *Proje hazırlık kapsamında üretim çizelgeleri ve çalışılan montaj süreleri,personel sayıları çalışmaları.*
+
+    -   *İdarenin görev alanı ve sorumluluğunda bulunan mevcut, planlanan ve planlanacak her türlü proje için belirlenen komisyonlarda görev almak,*
+
+    -   *İdare içerisinde ihtiyaç duyulan projeler için inceleme ve keşiflerde bulunmak,*
+
+    -   *Belirlenen projeler için ihale konusu mal, hizmet alımları ve yapımı işlerinin her türlü özelliğini belirten teknik şartnamelerin hazırlanması,*
+
+    -   *Proje takibinin yapılması ve idareye teslim edilen malın, yapılan işlerin ihale şartnamelerine göre uygunluğunun incelenmesi,*
+
+    -   *Projelerin hakediş dönemi içinde kontrollerinin sağlanması ve süreçlerinin tamamlanması aşamasındaki gerekli tüm dosyaların hazırlanması,*
+
+    -   *Proje kontrolü sırasında tespit edilen kusur ve noksanlıkların tespitinin yapılması ve kabule engel olacak kusur ve eksikliklerin giderilmesinin sağlanması,*
+
+    -   *Projenin belirten teknik şartnamelerine göre eksiksiz olarak tamamlanmasını sağlamak ve proje kabulünün yapılması.*
+
+3.  Brt Grup / Anadolu Metalurji, Proje ve Satış Mühendisi, 2019-2021
+
+    -   *Proje hazırlık kapsamında üretim çizelgeleri ve çalışılan montaj süreleri,personel sayıları çalışmaları.*
+
+    -   *Teklif çalışmalarının hazırlanması ve yürütülmesi,*
+
+    -   *Yurt içi ve yurt dışı potansiyel müşteri araştırması ve iş imkanı yaratmak,*
+
+    -   *Alınan siparişlerin, verilen tekliflerin firma ve ürün bazında raporlarının tutulması, takibi ve istatistiksel satış raporları hazırlanması,*
+
+    -   *Projelerin rapor ve tablolar ile takibi (satın alma, üretim, kalite süreçleri) ve ekipler arasındaki koordinasyonun sağlanması,*
+
+    -   *Proje için gerçekleşen süre ve maliyetlerini takip ederek gerekli iyileştirmelerin yapılması,*
+
+    -   *Sevkiyat programlarını ve gümrükleme işlemlerinin yürütülmesi için ilgili bölümlerle koordinasyonun sağlanması,*
+
+    -   *Kontrol planında yer alan kontrol ve testler için sonuçların değerlendirilmesine destek olmak,*
+
+    -   *Teklif hazırlama aşamasında yurtiçinden tedarik edilemeyen ürünlerle ilgili olarak muhtemel yurtdışı tedarikçilerden teklif almak.*
 
 ## Stajlar
 
-1.  Firma aaa, pozisyon xx, yıl xxx
+1.  Makine ve Kimya Endüstrisi Kurumu, MKE Maksam Makine ve Maske Fabrikası, Stajyer, 2017
 
-2.  Firma bbb, pozisyon yyy, yıl yyy
-
-# Projeler
-
-1.  TÜBİTAK 1001..........................
+2.  MİTAŞ Poligon Demir Çelik Endüstri A.Ş., Stajyer, 2016
 
 # Yetkinlikler
 
-R, Quarto, Git, Python
+Microsoft Office(Word, Excel, PowerPoint), Microsoft SQL, Microsoft POWER BI, Microsoft Report Builder, Autodesk Inventor, AutoCAD.
 
-# Hobiler
+# 

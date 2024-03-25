@@ -1,1 +1,30 @@
+---
+title: "Bahadır AKGÜN"
+---
 
+![](/assets/images/bahadır-akgun-vesikalik.PNG){fig-align="center" width="189"}
+
+# Eğitim
+
+-   Lisans, Makine & Otomotiv Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2014 - 2020.
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2023 - devam ediyor.
+
+# İş Deneyimi
+
+## İşler
+
+1.   MAN, Sistem Mühendisi, 2022-devam ediyor.
+
+-   *3D modeller, montaj çizimleri, teknik sayfalar ve dokümanların oluşturulması*
+
+-   *Fren sisteminin tasarlanması ve pnömatik devre şemasının oluşturulması.*
+
+## Stajlar
+
+1.  Nurol Makina ve Sanayi A.Ş, Stajyer, 2019
+
+2.  Vestel Savunma Sanayi, Stajyer, 2018
+
+# Yetkinlikler
+
+CATIA, Windchill, Jira, Sharepoint, Microsoft Excel, Microsoft Word
