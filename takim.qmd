@@ -16,4 +16,4 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 5.  [Bahadır AKGÜN](/takim/bahadirakgun.qmd) (Squirtle)
 
-6.  [Belirsiz](/takim/belirsiz.qmd)
+6.  [Süleyman ÖZDEMİR](/takim/suleymanozdemir.qmd) (Charmander)
