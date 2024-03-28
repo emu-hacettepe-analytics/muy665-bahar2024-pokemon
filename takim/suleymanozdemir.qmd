@@ -2,7 +2,7 @@
 title: "Süleyman ÖZDEMİR"
 ---
 
-![](/assets/images/suleymanozdemir-vesikalık.png){fig-align="center" width=""}
+![](/assets/images/suleymanozdemir-vesikalık.png){fig-align="center" width="554"}
 
 # Eğitim
 
@@ -11,17 +11,16 @@ title: "Süleyman ÖZDEMİR"
 
 # İş Deneyimi
 
-1.  Dorçe | Prefabrik & İnşaat , Procurement Specialist , 2023 - 2024
+1.  Dorçe \| Prefabrik & İnşaat , Procurement Specialist , 2023 - 2024
 2.  Doratek Medikal , Procurement Specialist , 2022 - 2023
 
 ## İşler
 
-
 ## Stajlar
 
 1.  Aselsan A.Ş, Stajyer, 2021
-2.  Hacettepe Üniversitesi, Stajyer, 2021   
+2.  Hacettepe Üniversitesi, Stajyer, 2021
 
 # Yetkinlikler
 
-CATIA, Solidworks, SAP IFS, Microsoft Excel, Microsoft Word, 
+CATIA, Solidworks, SAP IFS, Microsoft Excel, Microsoft Word,
