@@ -19,6 +19,14 @@ title: "Bahadır AKGÜN"
 
 -   *Fren sisteminin tasarlanması ve pnömatik devre şemasının oluşturulması.*
 
+-   *Elektromekanik fren sistemini oluşturan komponentlerin, haberleşme ağının oluşturulması ve geliştirilmesi *
+
+-   *Elektromekanik fren sistemini oluşturan komponentlerin; gereksinimlerinin, özelliklerinin ve kısıtlarının belirlenmesi *
+
+-   *Sistem için DFMEA, FHA, FSC analizlerinin yapılması*
+
+-   *ISO 26262 standartlarına uygun sistemler geliştirilmesi  *
+
 ## Stajlar
 
 1.  Nurol Makina ve Sanayi A.Ş, Stajyer, 2019
