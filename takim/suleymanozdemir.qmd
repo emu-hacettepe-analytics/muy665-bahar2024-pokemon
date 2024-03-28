@@ -24,4 +24,4 @@ title: "Süleyman ÖZDEMİR"
 
 # Yetkinlikler
 
-CATIA, Solidworks, SAP, Microsoft Excel, Microsoft Word
+CATIA, Solidworks, SAP IFS, Microsoft Excel, Microsoft Word, 
