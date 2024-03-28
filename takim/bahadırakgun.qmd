@@ -27,4 +27,4 @@ title: "Bahadır AKGÜN"
 
 # Yetkinlikler
 
-CATIA, Windchill, Jira, Sharepoint, Microsoft Excel, Microsoft Word
+CATIA, Windchill, Jira, Vector Canalyzer, ControlDesk, Signalyzer, Sharepoint, Microsoft Excel, Microsoft Word
