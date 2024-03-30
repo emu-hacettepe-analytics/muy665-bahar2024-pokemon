@@ -13,19 +13,19 @@ title: "Bahadır AKGÜN"
 
 ## İşler
 
-1.   MAN, Sistem Mühendisi, 2022-devam ediyor.
+1.  MAN, Sistem Mühendisi, 2022-devam ediyor.
 
 -   *3D modeller, montaj çizimleri, teknik sayfalar ve dokümanların oluşturulması*
 
 -   *Fren sisteminin tasarlanması ve pnömatik devre şemasının oluşturulması.*
 
--   *Elektromekanik fren sistemini oluşturan komponentlerin, haberleşme ağının oluşturulması ve geliştirilmesi *
+-   *Elektromekanik fren sistemini oluşturan komponentlerin, haberleşme ağının oluşturulması ve geliştirilmesi*
 
--   *Elektromekanik fren sistemini oluşturan komponentlerin; gereksinimlerinin, özelliklerinin ve kısıtlarının belirlenmesi *
+-   *Elektromekanik fren sistemini oluşturan komponentlerin; gereksinimlerinin, özelliklerinin ve kısıtlarının belirlenmesi*
 
 -   *Sistem için DFMEA, FHA, FSC analizlerinin yapılması*
 
--   *ISO 26262 standartlarına uygun sistemler geliştirilmesi  *
+-   *ISO 26262 standartlarına uygun sistemler geliştirilmesi*
 
 ## Stajlar
 
