@@ -5,22 +5,26 @@ title: "Süleyman ÖZDEMİR"
 ![](/assets/images/suleymanozdemir-vesikalık.png){fig-align="center" width="554"}
 
 # Eğitim
-
 -   Lisans, Makine & Otomotiv Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2015 - 2021.
 -   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2023 - devam ediyor.
 
 # İş Deneyimi
-
-1.  Dorçe Prefabrik & İnşaat , Procurement Specialist , 2023 - 2024
-2.  Doratek Medikal , Procurement Specialist , 2022 - 2023
+1.  Doratek Medikal , Procurement Specialist , 2022 - 2023
 
 ## İşler
+1.  Dorçe Prefabrik & İnşaat , Procurement Specialist , 2023 - devam ediyor
+ * Tedarik zinciri yönetimi kapsamında tedarik süreçlerini baştan sona planlamak ve yönetmek
+ * Potansiyel tedarikçileri araştırmak ve değerlendirmek
+ * Mevcut tedarikçilerin performansını değerlendirmek ve ilişkileri yönetmek
+ * Fiyat müzakereleri yapmak ve rekabetçi fiyatlar elde etmek
+ * Mal ve hizmetlerin zamanında teslimatını sağlamak
+ * Lojistik süreçleri koordine etmek ve izlemek
+ * Satın alma faaliyetlerinin maliyetlerini analiz etmek 
+ * Maliyetleri optimize etmek ve tasarruf fırsatlarını araştırmak
 
 ## Stajlar
-
-1.  Aselsan A.Ş, Stajyer, 2021
+1.  Aselsan A.Ş, Sistem Mühendisi - Stajyer, 2021
 2.  Hacettepe Üniversitesi, Stajyer, 2021
 
 # Yetkinlikler
-
-CATIA, Solidworks, SAP IFS, Microsoft Excel, Microsoft Word,
+CATIA, Solidworks,IFS , Microsoft Excel, Microsoft Word 
