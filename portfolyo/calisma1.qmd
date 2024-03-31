@@ -28,7 +28,9 @@ FICO: 30+ Custom potimization Model for Presales
 
 Bu sohbet sırasında, Baykal Hocanın yapmış olduğu projelerde, OR/Analytics Dünyasına Genel Bakış açısına değinmiş olup tecrübelerinden bahsetmiştir.
 
-Baykal hoca genelde Supply Chain işleriyle uğraştığı için bir sonraki projesi olan Supply Chain Solver owner and Main Developer projesi için hazırlamış olduğu tüm modelleri bir paket haline getirmiştir. Avrupa marketine girmiş ve 10 farklı şirket kullanmaktadır.\
+Baykal hoca genelde Supply Chain işleriyle uğraştığı için bir sonraki projesi olan Supply Chain Solver owner and Main Developer projesi için hazırlamış olduğu tüm modelleri bir paket haline getirmiştir. Avrupa marketine girmiş ve 10 farklı şirket kullanmaktadır.
+
+\
 ![](images/1.png)\
 \
 ![](images/2.jpg)
