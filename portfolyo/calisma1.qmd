@@ -2,7 +2,76 @@
 title: "Çalışma 1"
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
+## (a)
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
+`{r} 1 + 1}`
+
+## (b)
+
+```{r}
+# Özel Özet Fonksiyonu
+custom_summary <- function(vec) {
+  summary_list <- list(
+    Ortalama = mean(vec),
+    Medyan = median(vec),
+    Standart_Sapma = sd(vec),
+    Minimum = min(vec),
+    Maksimum = max(vec)
+  )
+  return(summary_list)
+}
+
+# mtcars veri setini yükleyelim
+#data(mtcars)
+
+# mtcars veri setini yükle
+data(mtcars)
+
+# Veri setinin sayısal sütunlarını al
+numeric_cols <- sapply(mtcars, is.numeric)
+
+# Her bir sayısal sütun için custom_summary fonksiyonunu uygula ve sonuçları yan yana yazdır
+for (col in names(mtcars)[numeric_cols]) {
+  summary <- custom_summary(mtcars[[col]])
+  cat("Araba Özellikleri:", col, "\n")
+  cat("Ortalama:", summary$Ortalama, "\t")
+  cat("Medyan:", summary$Medyan, "\t")
+  cat("Standart Sapma:", summary$Standart_Sapma, "\t")
+  cat("Minimum:", summary$Minimum, "\t")
+  cat("Maksimum:", summary$Maksimum, "\n")
+}
+
+```
+
+## (c)
+
+```{r}
+# dslabs paketini yükleyelim
+#install.packages("dslabs")
+library(dslabs)
+
+# na_example veri setini yükleyelim
+data("na_example")
+
+# Veri setinin içeriğini gösterelim (NA değerleri dahil)
+na_example
+
+# NA değerlerinin toplam sayısını bulalım
+na_count <- sum(is.na(na_example))
+na_count
+
+# NA değerlerini 665 ile değiştirelim
+updated_na_example <- na_example
+updated_na_example[is.na(updated_na_example)] <- 665
+
+# Güncellenmiş veri setini kontrol edelim (NA değerleri olmadan)
+updated_na_example
+
+# Güncellenmiş veri setindeki NA değerlerinin toplam sayısı
+updated_na_count <- sum(is.na(updated_na_example))
+updated_na_count
+
+# Güncellenmiş veri setinde 665 numarasının kaç kez yer aldığını bulalım
+num_665 <- sum(updated_na_example == 665)
+num_665
+```
