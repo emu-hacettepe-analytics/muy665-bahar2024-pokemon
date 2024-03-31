@@ -25,10 +25,10 @@ ozel_ozet <- function(vec) { # Özel Özet Fonksiyonu
 # mtcars veri seti yüklendi
 data(mtcars)
 
-# Veri setinin sayısal sütunları al
+# Veri setinin sayısal sütunları alındı
 sayisal_sutunlar <- sapply(mtcars, is.numeric)
 
-# Her bir sayısal sütun için custom_summary fonksiyonunu uygula ve sonuçları yan yana yazdır
+# Her bir sayısal sütun için ozel_ozet fonksiyonu uygulandı
 for (col in names(mtcars)[sayisal_sutunlar]) {
   ozet <- ozel_ozet(mtcars[[col]])
   cat("Araba Özellikleri:", col, "\n")
