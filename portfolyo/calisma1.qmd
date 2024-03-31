@@ -4,7 +4,56 @@ title: "Çalışma 1"
 
 ## (a)
 
-`{r} 1 + 1}`
+**Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir**
+
+[**ÖZET**]{.underline}
+
+Lisans eğitimini ODTÜ’de tamamlanmış olan Baykal hoca, 2005-2007 arasında yüksek lisans eğitimine de ODTÜ’de devam etmiştir. Doktorası için Amerika’ya gitmiştir. Paralelde A merika’da bir şirkette Yön-Eylem Araştırması Uzmanı olarak çalışmıştır. Çeşitli şirketlerde Yöne Eylem araştırmalarında çalışmış olan Baykal Hoca şu anda, FICO (Kredi Skorlama Şirketi) şirketinde Platform Yönetimi Direktörü olarak çalışmaktadır.
+
+Çalışmış olduğu LLamasoft şirketinde Out Of the Box şeklide yazılımlar geliştirirken, sonrasında çalışmaya başladığı Predictix şirketinde müşteriye özel Custom yazılımlar geliştirerek kariyerine yön vermiştir.
+
+Llama: Suppy Chain Guru
+
+Predictix:Pricing/Replenishment Optimizer for Whole Foods (Pricing Model&Deploy)
+
+FICO: Product Lifecycle Management Application for P&G (Used by 200+ people daily)
+
+FICO: 30+ Custon potimization Model for Presales
+
+Mevcutta çalışmaktan olduğu FICO ise, Amerika’da kişiler için kredi skorlamak şirketidir. Bu firma yazılım işine girmiştir. Express Solver’ı (matematik model çizen) satın almıştır. Baykal hocanın işi bu bu solverı çeşitli müşteriler için customise etmek ve satış için son kullanıcıyı ikna etmektir. Bu şirkette yapılan iş bazen model kalabilmekte, bazen ise ihtiyaca göre software haline getirebiliyor.
+
+FICO: Product Lifecycle Management Application for P&G (Used by 200+ people daily)
+
+FICO: 30+ Custom potimization Model for Presales
+
+Bu sohbet sırasında, Baykal Hocanın yapmış olduğu projelerde, OR/Analytics Dünyasına Genel Bakış açısına değinmiş olup tecrübelerinden bahsetmiştir.
+
+Baykal hoca genelde Supply Chain işleriyle uğraştığı için bir sonraki projesi olan Supply Chain Solver owner and Main Developer projesi için hazırlamış olduğu tüm modelleri bir paket haline getirmiştir. Avrupa marketine girmiş ve 10 farklı şirket kullanmaktadır.\
+![](images/1.png)\
+\
+![](images/2.jpg)
+
+Son kullanıcı her zaman haklıdır. Bu mantıkla ürünü tek ve stake holder çıkartmak çok önemli. İlk olarak ürünü hızlı ve sistemsel yüklemek çok önemli. Ekstra olarak sürekli güncelleme getirmek müşterinin hoşnutsuzluğunu kazanmaya sebep olacaktır. Bunun için çıkartılacak olan program hatasız ve rigid olmalı.
+
+[**OR/Analytics Dünyasına Bakış**]{.underline}
+
+Genel hatlarda aşağıda detaylandırılan 4 ana çerçeveden oluşmaktadır.
+
+![](images/3.jpg)
+
+**Descriptive Analytics:** Bir nesneyi tanımlamak için kullanılan analitik yöntemleridir. Basit gibi görünse de en kritik yöntemlerden bir tanesidir.
+
+Bu yöntem, mevcut verileri kullanarak bir organizasyonun, olayın veya durumun geçmişteki ve mevcut durumunu anlamak için kullanılır. Temel istatistikler, görselleştirmeler ve raporlamalar yoluyla gerçekleştirilir. Örneğin, bir şirketin geçmiş satış verilerini analiz ederek, hangi ürünlerin en çok satıldığını veya hangi dönemlerin satışlarının arttığını tanımlayabilir. Bu, organizasyonların mevcut durumu anlamalarına ve performanslarını ölçmelerine yardımcı olur.
+
+**Diagnostic Analytics:** Bir sorunun var olduğunu ve bu sorunun neden ortaya çıktığını anlayabilmek için kullanılan analitik yöntemleridir. Tanımlayıcı analitikten elde edilen bilgilere dayanarak, belirli bir sorunun veya eğilimin nedenlerini araştırmak için kullanılır. Bu, veri madenciliği, korelasyon analizi ve diğer ileri istatistiksel yöntemleri içerebilir. Örneğin, bir şirketin satışlarında beklenmedik bir düşüş yaşanması durumunda, tanısal analitik, bu düşüşün nedenlerini belirlemek için kullanılabilir.
+
+**Predictive Analytics:** Gelecekte neler olabileceğini öngörmek için kullanılan analitik yöntemlerdir. Bu, istatistiksel modeller, makine öğrenimi algoritmaları ve veri madenciliği teknikleri kullanılarak yapılır. Örneğin, müşteri davranışı modelleri, bir müşterinin bir ürünü satın alma olasılığını veya bir müşterinin bir hizmetten ne zaman çıkma olasılığını tahmin etmek için kullanılabilir.
+
+**Prescriptive Analytics:** bir sorun var ve ortaya çıkan bu sorunun giderilmesi için alınacak aksiyonlar için kullanılan analitik yöntemlerdir.
+
+Sadece ne olacağını tahmin etmekle kalmaz, aynı zamanda bu öngörülere dayalı olarak ne yapılması gerektiğini belirlemek için kullanılır. Bu, karar destek sistemleri, optimizasyon ve simülasyon tekniklerini içerebilir. Örneğin, bir şirket, envanter yönetimi, fiyatlandırma stratejileri veya pazarlama kampanyaları için en iyi eylem planını belirlemek için reçeteleyici analitik kullanabilir.
+
+Devamında Baykal Hoca, daha önce videonun girişinde çalışmış olduğu 3 farklı şirkette deneyimlemiş olduğu projelerdeki tecrübelerini anlatırken birçok ihtiyaca hitap eden analitik modelleme birçok sorunu çözerken bir taraftan da bazı şeyleri bozabileceğinin üzerinde durdu. Konuşmasının bitiminde öğrenci arkadaşların sorularına cevap vererek oturumu kapattı.
 
 ## (b)
 
