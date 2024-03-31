@@ -36,8 +36,8 @@ for (col in names(mtcars)[sayisal_sutunlar]) {
   cat("Medyan:",sprintf("%.2f", round(ozet$Medyan,digits = 2)), "\t \t")
   cat("Standart Sapma:", round (ozet$Standart_Sapma, digits = 2), "\t \t")
   cat("Minimum:", sprintf("%.2f",ozet$Minimum), "\t \t")
-  cat("Maksimum:", ozet$Maksimum, "\n")
-  
+  cat("Maksimum:", sprintf("%.2f",ozet$Maksimum), "\n")
+
   cat("------------------------------------------------------------------------------------------------------------","\n")
 }
 
