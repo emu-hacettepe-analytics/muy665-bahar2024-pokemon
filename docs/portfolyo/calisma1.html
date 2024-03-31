@@ -255,7 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  summary <span class="ot">&lt;-</span> <span class="fu">custom_summary</span>(mtcars[[col]])</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Araba Özellikleri:"</span>, col, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Ortalama:"</span>, summary<span class="sc">$</span>Ortalama, <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Medyan:"</span>, summary<span class="sc">$</span>Medyan, <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Medyan:"</span>, <span class="fu">round</span>(summary<span class="sc">$</span>Medyan,<span class="at">digits =</span> <span class="dv">2</span>), <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Standart Sapma:"</span>, <span class="fu">round</span> (summary<span class="sc">$</span>Standart_Sapma, <span class="at">digits =</span> <span class="dv">2</span>), <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Minimum:"</span>, summary<span class="sc">$</span>Minimum, <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Maksimum:"</span>, summary<span class="sc">$</span>Maksimum, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
@@ -276,10 +276,10 @@ Araba Özellikleri: hp
 Ortalama: 146.6875      Medyan: 123         Standart Sapma: 68.56       Minimum: 52         Maksimum: 335 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: drat 
-Ortalama: 3.596563      Medyan: 3.695       Standart Sapma: 0.53        Minimum: 2.76       Maksimum: 4.93 
+Ortalama: 3.596563      Medyan: 3.7         Standart Sapma: 0.53        Minimum: 2.76       Maksimum: 4.93 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: wt 
-Ortalama: 3.21725       Medyan: 3.325       Standart Sapma: 0.98        Minimum: 1.513      Maksimum: 5.424 
+Ortalama: 3.21725       Medyan: 3.33        Standart Sapma: 0.98        Minimum: 1.513      Maksimum: 5.424 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: qsec 
 Ortalama: 17.84875      Medyan: 17.71       Standart Sapma: 1.79        Minimum: 14.5       Maksimum: 22.9 

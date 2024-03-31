@@ -35,7 +35,7 @@ for (col in names(mtcars)[numeric_cols]) {
   summary <- custom_summary(mtcars[[col]])
   cat("Araba Özellikleri:", col, "\n")
   cat("Ortalama:", summary$Ortalama, "\t \t")
-  cat("Medyan:", summary$Medyan, "\t \t")
+  cat("Medyan:", round(summary$Medyan,digits = 2), "\t \t")
   cat("Standart Sapma:", round (summary$Standart_Sapma, digits = 2), "\t \t")
   cat("Minimum:", summary$Minimum, "\t \t")
   cat("Maksimum:", summary$Maksimum, "\n")
