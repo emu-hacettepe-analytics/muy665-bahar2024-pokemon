@@ -33,7 +33,7 @@ numeric_cols <- sapply(mtcars, is.numeric)
 # Her bir sayısal sütun için custom_summary fonksiyonunu uygula ve sonuçları yan yana yazdır
 for (col in names(mtcars)[numeric_cols]) {
   summary <- custom_summary(mtcars[[col]])
-  cat("Araba Özellikleri:", col, "\n")
+  cat("**Araba Özellikleri:**", col, "\n")
   cat("Ortalama:", summary$Ortalama, "\t")
   cat("Medyan:", summary$Medyan, "\t")
   cat("Standart Sapma:", summary$Standart_Sapma, "\t")
@@ -41,15 +41,7 @@ for (col in names(mtcars)[numeric_cols]) {
   cat("Maksimum:", summary$Maksimum, "\n")
 }
 
-for (col in names(mtcars)[numeric_cols]) {
-  summary <- custom_summary(mtcars[[col]])
-  cat("<b>Column:</b> ", col, "<br>")
-  cat("<b>Mean:</b> ", summary$mean, "\t")
-  cat("<b>Median:</b> ", summary$median, "\t")
-  cat("<b>SD:</b> ", summary$sd, "\t")
-  cat("<b>Min:</b> ", summary$min, "\t")
-  cat("<b>Max:</b> ", summary$max, "<br><br>")
-}
+
 
 ```
 
