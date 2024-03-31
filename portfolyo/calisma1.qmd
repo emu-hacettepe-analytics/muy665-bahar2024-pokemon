@@ -9,36 +9,34 @@ title: "Çalışma 1"
 ## (b)
 
 ```{r}
-# Özel Özet Fonksiyonu
-custom_summary <- function(vec) {
-  summary_list <- list(
+ozel_ozet <- function(vec) { # Özel Özet Fonksiyonu
+  #Ortalama, Medyan, Standart Sapma, Minimum ve Maksimum değerler değişkene atandı
+  ozet_liste <- list(
     Ortalama = mean(vec),
     Medyan = median(vec),
     Standart_Sapma = sd(vec),
     Minimum = min(vec),
     Maksimum = max(vec)
   )
-  return(summary_list)
+  return(ozet_liste)
 }
 
-# mtcars veri setini yükleyelim
-#data(mtcars)
 
-# mtcars veri setini yükle
+# mtcars veri seti yüklendi
 data(mtcars)
 
-# Veri setinin sayısal sütunlarını al
-numeric_cols <- sapply(mtcars, is.numeric)
+# Veri setinin sayısal sütunları al
+sayisal_sutunlar <- sapply(mtcars, is.numeric)
 
 # Her bir sayısal sütun için custom_summary fonksiyonunu uygula ve sonuçları yan yana yazdır
-for (col in names(mtcars)[numeric_cols]) {
-  summary <- custom_summary(mtcars[[col]])
+for (col in names(mtcars)[sayisal_sutunlar]) {
+  ozet <- ozel_ozet(mtcars[[col]])
   cat("Araba Özellikleri:", col, "\n")
-  cat("Ortalama:", summary$Ortalama, "\t \t")
-  cat("Medyan:", round(summary$Medyan,digits = 2), "\t \t")
-  cat("Standart Sapma:", round (summary$Standart_Sapma, digits = 2), "\t \t")
-  cat("Minimum:", summary$Minimum, "\t \t")
-  cat("Maksimum:", summary$Maksimum, "\n")
+  cat("Ortalama:",  ozet$Ortalama, "\t \t")
+  cat("Medyan:",sprintf("%10.2f", round(ozet$Medyan,digits = 2)), "\t \t")
+  cat("Standart Sapma:", round (ozet$Standart_Sapma, digits = 2), "\t \t")
+  cat("Minimum:", ozet$Minimum, "\t \t")
+  cat("Maksimum:", ozet$Maksimum, "\n")
   
   cat("------------------------------------------------------------------------------------------------------------","\n")
 }

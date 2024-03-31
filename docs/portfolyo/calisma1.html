@@ -229,72 +229,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="b" class="level2">
 <h2 class="anchored" data-anchor-id="b">(b)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Özel Özet Fonksiyonu</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>custom_summary <span class="ot">&lt;-</span> <span class="cf">function</span>(vec) {</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  summary_list <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ozel_ozet <span class="ot">&lt;-</span> <span class="cf">function</span>(vec) { <span class="co"># Özel Özet Fonksiyonu</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#Ortalama, Medyan, Standart Sapma, Minimum ve Maksimum değerler değişkene atandı</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  ozet_liste <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">Ortalama =</span> <span class="fu">mean</span>(vec),</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">Medyan =</span> <span class="fu">median</span>(vec),</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">Standart_Sapma =</span> <span class="fu">sd</span>(vec),</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">Minimum =</span> <span class="fu">min</span>(vec),</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">Maksimum =</span> <span class="fu">max</span>(vec)</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(summary_list)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(ozet_liste)</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># mtcars veri setini yükleyelim</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">#data(mtcars)</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># mtcars veri setini yükle</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mtcars)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Veri setinin sayısal sütunlarını al</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>numeric_cols <span class="ot">&lt;-</span> <span class="fu">sapply</span>(mtcars, is.numeric)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Her bir sayısal sütun için custom_summary fonksiyonunu uygula ve sonuçları yan yana yazdır</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (col <span class="cf">in</span> <span class="fu">names</span>(mtcars)[numeric_cols]) {</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  summary <span class="ot">&lt;-</span> <span class="fu">custom_summary</span>(mtcars[[col]])</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Araba Özellikleri:"</span>, col, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Ortalama:"</span>, summary<span class="sc">$</span>Ortalama, <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Medyan:"</span>, <span class="fu">round</span>(summary<span class="sc">$</span>Medyan,<span class="at">digits =</span> <span class="dv">2</span>), <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Standart Sapma:"</span>, <span class="fu">round</span> (summary<span class="sc">$</span>Standart_Sapma, <span class="at">digits =</span> <span class="dv">2</span>), <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Minimum:"</span>, summary<span class="sc">$</span>Minimum, <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Maksimum:"</span>, summary<span class="sc">$</span>Maksimum, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"------------------------------------------------------------------------------------------------------------"</span>,<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># mtcars veri seti yüklendi</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mtcars)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Veri setinin sayısal sütunları al</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>sayisal_sutunlar <span class="ot">&lt;-</span> <span class="fu">sapply</span>(mtcars, is.numeric)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Her bir sayısal sütun için custom_summary fonksiyonunu uygula ve sonuçları yan yana yazdır</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (col <span class="cf">in</span> <span class="fu">names</span>(mtcars)[sayisal_sutunlar]) {</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  ozet <span class="ot">&lt;-</span> <span class="fu">ozel_ozet</span>(mtcars[[col]])</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Araba Özellikleri:"</span>, col, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Ortalama:"</span>,  ozet<span class="sc">$</span>Ortalama, <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Medyan:"</span>,<span class="fu">sprintf</span>(<span class="st">"%10.2f"</span>, <span class="fu">round</span>(ozet<span class="sc">$</span>Medyan,<span class="at">digits =</span> <span class="dv">2</span>)), <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Standart Sapma:"</span>, <span class="fu">round</span> (ozet<span class="sc">$</span>Standart_Sapma, <span class="at">digits =</span> <span class="dv">2</span>), <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Minimum:"</span>, ozet<span class="sc">$</span>Minimum, <span class="st">"</span><span class="sc">\t</span><span class="st"> </span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Maksimum:"</span>, ozet<span class="sc">$</span>Maksimum, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"------------------------------------------------------------------------------------------------------------"</span>,<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Araba Özellikleri: mpg 
-Ortalama: 20.09062      Medyan: 19.2        Standart Sapma: 6.03        Minimum: 10.4       Maksimum: 33.9 
+Ortalama: 20.09062      Medyan:      19.20      Standart Sapma: 6.03        Minimum: 10.4       Maksimum: 33.9 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: cyl 
-Ortalama: 6.1875        Medyan: 6       Standart Sapma: 1.79        Minimum: 4      Maksimum: 8 
+Ortalama: 6.1875        Medyan:       6.00      Standart Sapma: 1.79        Minimum: 4      Maksimum: 8 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: disp 
-Ortalama: 230.7219      Medyan: 196.3       Standart Sapma: 123.94      Minimum: 71.1       Maksimum: 472 
+Ortalama: 230.7219      Medyan:     196.30      Standart Sapma: 123.94      Minimum: 71.1       Maksimum: 472 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: hp 
-Ortalama: 146.6875      Medyan: 123         Standart Sapma: 68.56       Minimum: 52         Maksimum: 335 
+Ortalama: 146.6875      Medyan:     123.00      Standart Sapma: 68.56       Minimum: 52         Maksimum: 335 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: drat 
-Ortalama: 3.596563      Medyan: 3.7         Standart Sapma: 0.53        Minimum: 2.76       Maksimum: 4.93 
+Ortalama: 3.596563      Medyan:       3.70      Standart Sapma: 0.53        Minimum: 2.76       Maksimum: 4.93 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: wt 
-Ortalama: 3.21725       Medyan: 3.33        Standart Sapma: 0.98        Minimum: 1.513      Maksimum: 5.424 
+Ortalama: 3.21725       Medyan:       3.33      Standart Sapma: 0.98        Minimum: 1.513      Maksimum: 5.424 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: qsec 
-Ortalama: 17.84875      Medyan: 17.71       Standart Sapma: 1.79        Minimum: 14.5       Maksimum: 22.9 
+Ortalama: 17.84875      Medyan:      17.71      Standart Sapma: 1.79        Minimum: 14.5       Maksimum: 22.9 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: vs 
-Ortalama: 0.4375        Medyan: 0       Standart Sapma: 0.5         Minimum: 0      Maksimum: 1 
+Ortalama: 0.4375        Medyan:       0.00      Standart Sapma: 0.5         Minimum: 0      Maksimum: 1 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: am 
-Ortalama: 0.40625       Medyan: 0       Standart Sapma: 0.5         Minimum: 0      Maksimum: 1 
+Ortalama: 0.40625       Medyan:       0.00      Standart Sapma: 0.5         Minimum: 0      Maksimum: 1 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: gear 
-Ortalama: 3.6875        Medyan: 4       Standart Sapma: 0.74        Minimum: 3      Maksimum: 5 
+Ortalama: 3.6875        Medyan:       4.00      Standart Sapma: 0.74        Minimum: 3      Maksimum: 5 
 ------------------------------------------------------------------------------------------------------------ 
 Araba Özellikleri: carb 
-Ortalama: 2.8125        Medyan: 2       Standart Sapma: 1.62        Minimum: 1      Maksimum: 8 
+Ortalama: 2.8125        Medyan:       2.00      Standart Sapma: 1.62        Minimum: 1      Maksimum: 8 
 ------------------------------------------------------------------------------------------------------------ </code></pre>
 </div>
 </div>
