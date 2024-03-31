@@ -41,6 +41,16 @@ for (col in names(mtcars)[numeric_cols]) {
   cat("Maksimum:", summary$Maksimum, "\n")
 }
 
+for (col in names(mtcars)[numeric_cols]) {
+  summary <- custom_summary(mtcars[[col]])
+  cat("<b>Column:</b> ", col, "<br>")
+  cat("<b>Mean:</b> ", summary$mean, "\t")
+  cat("<b>Median:</b> ", summary$median, "\t")
+  cat("<b>SD:</b> ", summary$sd, "\t")
+  cat("<b>Min:</b> ", summary$min, "\t")
+  cat("<b>Max:</b> ", summary$max, "<br><br>")
+}
+
 ```
 
 ## (c)

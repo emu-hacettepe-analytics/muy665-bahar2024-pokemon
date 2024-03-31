@@ -284,20 +284,32 @@ Ortalama: 3.6875    Medyan: 4   Standart Sapma: 0.7378041   Minimum: 3  Maksimum
 Araba Özellikleri: carb 
 Ortalama: 2.8125    Medyan: 2   Standart Sapma: 1.6152  Minimum: 1  Maksimum: 8 </code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (col <span class="cf">in</span> <span class="fu">names</span>(mtcars)[numeric_cols]) {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  summary <span class="ot">&lt;-</span> <span class="fu">custom_summary</span>(mtcars[[col]])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"&lt;b&gt;Column:&lt;/b&gt; "</span>, col, <span class="st">"&lt;br&gt;"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"&lt;b&gt;Mean:&lt;/b&gt; "</span>, summary<span class="sc">$</span>mean, <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"&lt;b&gt;Median:&lt;/b&gt; "</span>, summary<span class="sc">$</span>median, <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"&lt;b&gt;SD:&lt;/b&gt; "</span>, summary<span class="sc">$</span>sd, <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"&lt;b&gt;Min:&lt;/b&gt; "</span>, summary<span class="sc">$</span>min, <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"&lt;b&gt;Max:&lt;/b&gt; "</span>, summary<span class="sc">$</span>max, <span class="st">"&lt;br&gt;&lt;br&gt;"</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;b&gt;Column:&lt;/b&gt;  mpg &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;    &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  cyl &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;   &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  disp &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;      &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  hp &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;    &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  drat &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;      &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  wt &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;    &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  qsec &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;      &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  vs &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;    &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  am &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;    &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  gear &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;      &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;&lt;b&gt;Column:&lt;/b&gt;  carb &lt;br&gt;&lt;b&gt;Mean:&lt;/b&gt;      &lt;b&gt;Median:&lt;/b&gt;      &lt;b&gt;SD:&lt;/b&gt;      &lt;b&gt;Min:&lt;/b&gt;     &lt;b&gt;Max:&lt;/b&gt;  &lt;br&gt;&lt;br&gt;</code></pre>
+</div>
 </div>
 </section>
 <section id="c" class="level2">
 <h2 class="anchored" data-anchor-id="c">(c)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># dslabs paketini yükleyelim</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("dslabs")</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># na_example veri setini yükleyelim</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"na_example"</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Veri setinin içeriğini gösterelim (NA değerleri dahil)</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>na_example</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># dslabs paketini yükleyelim</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("dslabs")</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># na_example veri setini yükleyelim</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"na_example"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Veri setinin içeriğini gösterelim (NA değerleri dahil)</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>na_example</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1
   [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1
@@ -342,18 +354,18 @@ Ortalama: 2.8125    Medyan: 2   Standart Sapma: 1.6152  Minimum: 1  Maksimum: 8 
  [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1
  [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NA değerlerinin toplam sayısını bulalım</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>na_count <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(na_example))</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>na_count</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NA değerlerinin toplam sayısını bulalım</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>na_count <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(na_example))</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>na_count</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 145</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NA değerlerini 665 ile değiştirelim</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>updated_na_example <span class="ot">&lt;-</span> na_example</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>updated_na_example[<span class="fu">is.na</span>(updated_na_example)] <span class="ot">&lt;-</span> <span class="dv">665</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Güncellenmiş veri setini kontrol edelim (NA değerleri olmadan)</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>updated_na_example</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NA değerlerini 665 ile değiştirelim</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>updated_na_example <span class="ot">&lt;-</span> na_example</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>updated_na_example[<span class="fu">is.na</span>(updated_na_example)] <span class="ot">&lt;-</span> <span class="dv">665</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Güncellenmiş veri setini kontrol edelim (NA değerleri olmadan)</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>updated_na_example</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   [1]   2   1   3   2   1   3   1   4   3   2   2 665   2   2   1   4 665   1
   [19]   1   2   1   2   2   1   2   5 665   2   2   3   1   2   4   1   1   1
@@ -412,15 +424,15 @@ Ortalama: 2.8125    Medyan: 2   Standart Sapma: 1.6152  Minimum: 1  Maksimum: 8 
  [973]   5   3   5   1   1   4 665   2   1   3   1   1   2   4   3   3   3 665
  [991]   1   1   2   2   1   1   2   2 665   2</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Güncellenmiş veri setindeki NA değerlerinin toplam sayısı</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>updated_na_count <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(updated_na_example))</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>updated_na_count</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Güncellenmiş veri setindeki NA değerlerinin toplam sayısı</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>updated_na_count <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(updated_na_example))</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>updated_na_count</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Güncellenmiş veri setinde 665 numarasının kaç kez yer aldığını bulalım</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>num_665 <span class="ot">&lt;-</span> <span class="fu">sum</span>(updated_na_example <span class="sc">==</span> <span class="dv">665</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>num_665</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Güncellenmiş veri setinde 665 numarasının kaç kez yer aldığını bulalım</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>num_665 <span class="ot">&lt;-</span> <span class="fu">sum</span>(updated_na_example <span class="sc">==</span> <span class="dv">665</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>num_665</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 145</code></pre>
 </div>
