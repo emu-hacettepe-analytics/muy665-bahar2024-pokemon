@@ -222,7 +222,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "POKEMON TAKIMI",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nSusku UZUN (Raichu)\nEnes Mert ACAR (Machoke)\nMertcan ÇALDAR (Bulbasaur)\nÇağla Hazal MÜVEZZİ (Mew)\nBahadır AKGÜN (Squirtle)\nBelirsiz"
+    "text": "Takım Üyeleri\n\nSusku UZUN (Raichu)\nEnes Mert ACAR (Machoke)\nMertcan ÇALDAR (Bulbasaur)\nÇağla Hazal MÜVEZZİ (Mew)\nBahadır AKGÜN (Squirtle)\nSüleyman ÖZDEMİR (Charmander)"
   },
   {
     "objectID": "portfolyo.html",
@@ -236,7 +236,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nSusku UZUN\nEnes Mert ACAR\nMertcan ÇALDAR\nÇağla Hazal MÜVEZZİ\nBahadır AKGÜN\nBelirsiz\n\n\n\n\n\n Back to top"
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nSusku UZUN (Raichu)\nEnes Mert ACAR (Machoke)\nMertcan ÇALDAR (Bulbasaur)\nÇağla Hazal MÜVEZZİ (Mew)\nBahadır AKGÜN (Squirtle)\nSüleyman ÖZDEMİR (Charmander)\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "proje.html",
@@ -317,11 +317,7 @@
     "href": "portfolyo/calisma1.html",
     "title": "Çalışma 1",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 1"
-    ]
+    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.\n\n\n\n Back to top"
   },
   {
     "objectID": "proje.html#veri-kaynağı",
@@ -633,5 +629,19 @@
     "title": "Bahadır AKGÜN",
     "section": "Stajlar",
     "text": "Stajlar\n\nNurol Makina ve Sanayi A.Ş, Stajyer, 2019\nVestel Savunma Sanayi, Stajyer, 2018"
+  },
+  {
+    "objectID": "takim/suleymanozdemir.html#işler",
+    "href": "takim/suleymanozdemir.html#işler",
+    "title": "Süleyman ÖZDEMİR",
+    "section": "İşler",
+    "text": "İşler\n\nDorçe Prefabrik & İnşaat , Procurement Specialist , 2023 - devam ediyor\n\n\nTedarik zinciri yönetimi kapsamında tedarik süreçlerini baştan sona planlamak ve yönetmek\nPotansiyel tedarikçileri araştırmak ve değerlendirmek\nMevcut tedarikçilerin performansını değerlendirmek ve ilişkileri yönetmek\nFiyat müzakereleri yapmak ve rekabetçi fiyatlar elde etmek\nMal ve hizmetlerin zamanında teslimatını sağlamak\nLojistik süreçleri koordine etmek ve izlemek\nSatın alma faaliyetlerinin maliyetlerini analiz etmek\nMaliyetleri optimize etmek ve tasarruf fırsatlarını araştırmak"
+  },
+  {
+    "objectID": "takim/suleymanozdemir.html#stajlar",
+    "href": "takim/suleymanozdemir.html#stajlar",
+    "title": "Süleyman ÖZDEMİR",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nAselsan A.Ş, Sistem Mühendisi - Stajyer, 2021\nHacettepe Üniversitesi, Stajyer, 2021"
   }
 ]

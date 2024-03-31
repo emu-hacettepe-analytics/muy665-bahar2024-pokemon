@@ -17,7 +17,7 @@ MUY665-İş Analitiği dersi Pokemın Takımı sayfamıza hoş geldiniz.
 
 4.  [Çağla Hazal MÜVEZZİ](/takim/caglahazalmuvezzi.qmd) (Mew)
 
-5.  [Bahadır AKGÜN](/takim/bahadırakgun.qmd) (Squirtle)
+5.  [Bahadır AKGÜN](/takim/bahadirakgun.qmd) (Squirtle)
 
 6.  [Süleyman ÖZDEMİR](/takim/suleymanozdemir.qmd) (Charmander)
 
