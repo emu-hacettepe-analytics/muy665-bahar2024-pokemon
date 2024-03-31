@@ -50,32 +50,32 @@ for (col in names(mtcars)[numeric_cols]) {
 ## (c)
 
 ```{r}
-# dslabs paketini yükleyelim
-#install.packages("dslabs")
+# İlk başta dslabs paketi yüklendi
 library(dslabs)
 
-# na_example veri setini yükleyelim
+# na_example veri seti yüklendi
 data("na_example")
 
-# Veri setinin içeriğini gösterelim (NA değerleri dahil)
+# Veri setinin içeriği NA değerleri ile birlikte gösterildi
 na_example
 
-# NA değerlerinin toplam sayısını bulalım
+# NA değerlerinin toplam sayısı bulundu
 na_count <- sum(is.na(na_example))
-na_count
+cat("İlk durumda NA verilerinin adeti:", na_count, "\n")
 
-# NA değerlerini 665 ile değiştirelim
+# NA değerlerini 665 ile değiştirildi
 updated_na_example <- na_example
 updated_na_example[is.na(updated_na_example)] <- 665
 
-# Güncellenmiş veri setini kontrol edelim (NA değerleri olmadan)
+# Na değerleri olmadan güncellenen veri seti kontrol edildi
 updated_na_example
 
-# Güncellenmiş veri setindeki NA değerlerinin toplam sayısı
+# Güncellenmiş veri setindeki NA değerlerinin toplam sayısı bulundu
 updated_na_count <- sum(is.na(updated_na_example))
-updated_na_count
 
-# Güncellenmiş veri setinde 665 numarasının kaç kez yer aldığını bulalım
+# Güncellenmiş veri setinde 665 numarası adetleri bulundu
 num_665 <- sum(updated_na_example == 665)
-num_665
+cat("665 sayılarının adeti:", num_665, "\n")
+cat("Son durumda NA verilerinin adeti:",updated_na_count)
+
 ```
