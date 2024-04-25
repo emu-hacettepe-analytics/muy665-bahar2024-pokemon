@@ -7,7 +7,9 @@ MUY665-İş Analitiği dersi Pokemın Takımı sayfamıza hoş geldiniz.
 
 **Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.**
 
-## Takım Üyeleri
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGZ2bjJ3cW14YjYxZ2czYXNzb3ViZHN2cnA0ZHcyYTg0dXpmYnd0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8UGGp7rQvfhe63HrFq/giphy.gif){fig-align="center"}
+
+## Takım Üyeleri ![](images/Poke_Ball.webp){width="15"}
 
 1.  [Susku UZUN](/takim/suskuuzun.qmd) (Raichu)
 
