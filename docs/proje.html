@@ -670,8 +670,61 @@ Attaching package: 'gridExtra'</code></pre>
 <h2 class="anchored" data-anchor-id="veri-kaynağı">Veri Kaynağı</h2>
 <p><a href="https://data.ibb.gov.tr/dataset/deprem-senaryosu-analiz-sonuclari">İstanbul Deprem Senaryosu Verileri</a></p>
 </section>
+<<<<<<< HEAD
 <section id="veri-hakkında-genel-bilgiler" class="level2">
 <h2 class="anchored" data-anchor-id="veri-hakkında-genel-bilgiler">Veri Hakkında Genel Bilgiler</h2>
+=======
+<section id="veri" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Veri</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="co">#install.packages("stringr")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readr)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(knitr)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(leaflet)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readxl)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(gridExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'gridExtra'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:dplyr':
+
+    combine</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readxl)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(stringi)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(stringr)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz &lt;- read_excel("deprem.xlsx")</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- stri_trans_general(deprem_analiz$ilce_adi, "latin-ascii")</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>   <span class="co">#deprem_analiz$ilce_adi &lt;- iconv(deprem_analiz$ilce_adi, from = "latin1", to = "UTF-8")</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    deprem_analiz <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"deprem-senaryosu-analiz-sonuclar.csv"</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- gsub("Ý", "İ", deprem_analiz$ilce_adi, fixed = TRUE)</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- gsub("Ð", "Ğ", deprem_analiz$ilce_adi, fixed = TRUE)</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- gsub("Þ", "Ş", deprem_analiz$ilce_adi, fixed = TRUE)</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- gsub("Þ", "Ş", deprem_analiz$ilce_adi, fixed = TRUE)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="veri-kaynağı" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</h2>
+<p>xxxxxx</p>
+>>>>>>> 745c870c097cd463b284785e843c26af3a66824d
 </section>
 <section id="tercih-sebebi" class="level2">
 <h2 class="anchored" data-anchor-id="tercih-sebebi">Tercih Sebebi</h2>

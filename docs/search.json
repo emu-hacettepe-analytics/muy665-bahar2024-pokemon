@@ -222,7 +222,11 @@
     "href": "index.html#takım-üyeleri",
     "title": "POKEMON TAKIMI",
     "section": "Takım Üyeleri ",
+<<<<<<< HEAD
     "text": "Takım Üyeleri \n\nSusku UZUN (Pikachu) \nEnes Mert ACAR (Pidgeotto) \nMertcan ÇALDAR (Bulbasaur) \nÇağla Hazal MÜVEZZİ (Jigglypuff) \nBahadır AKGÜN (Squirtle) \nSüleyman ÖZDEMİR (Charmander)"
+=======
+    "text": "Takım Üyeleri \n\nSusku UZUN (Raichu)\nEnes Mert ACAR (Machoke)\nMertcan ÇALDAR (Bulbasaur)\nÇağla Hazal MÜVEZZİ (Mew)\nBahadır AKGÜN (Squirtle)\nSüleyman ÖZDEMİR (Charmander)"
+>>>>>>> 745c870c097cd463b284785e843c26af3a66824d
   },
   {
     "objectID": "portfolyo.html",

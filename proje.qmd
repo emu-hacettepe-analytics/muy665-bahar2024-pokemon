@@ -1,18 +1,37 @@
+<<<<<<< HEAD
 \#**Proje sayfamıza hoş geldiniz. Biz Pokemon'lar olarak sizlere bir analiz yaptık.. Şöyle ki;**
+=======
+---
+title: "Proje X (proje adını yazınız)"
+number-sections: true
+---
+
+**Proje sayfamıza hoş geldiniz.**
+
+*Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
+
+(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)
+>>>>>>> 745c870c097cd463b284785e843c26af3a66824d
 
 # Proje Genel Bakış ve Kapsamı
 
 # Veri
 
 ```{r}
+<<<<<<< HEAD
     
     library(dplyr)
+=======
+ #install.packages("stringr")
+library(dplyr)
+>>>>>>> 745c870c097cd463b284785e843c26af3a66824d
     library(readr)
     library(knitr)
     library(ggplot2)
     library(leaflet)
     library(readxl)
     library(gridExtra)
+<<<<<<< HEAD
 
 
     
@@ -50,6 +69,20 @@ district_sum <- data.frame(district_sum)
 
 
 
+=======
+    library(readxl)
+    library(stringi)
+    library(stringr)
+    
+    #deprem_analiz <- read_excel("deprem.xlsx")
+    #deprem_analiz$ilce_adi <- stri_trans_general(deprem_analiz$ilce_adi, "latin-ascii")
+   #deprem_analiz$ilce_adi <- iconv(deprem_analiz$ilce_adi, from = "latin1", to = "UTF-8")
+    deprem_analiz <- read.csv("deprem-senaryosu-analiz-sonuclar.csv")
+    #deprem_analiz$ilce_adi <- gsub("Ý", "İ", deprem_analiz$ilce_adi, fixed = TRUE)
+    #deprem_analiz$ilce_adi <- gsub("Ð", "Ğ", deprem_analiz$ilce_adi, fixed = TRUE)
+    #deprem_analiz$ilce_adi <- gsub("Þ", "Ş", deprem_analiz$ilce_adi, fixed = TRUE)
+    #deprem_analiz$ilce_adi <- gsub("Þ", "Ş", deprem_analiz$ilce_adi, fixed = TRUE)
+>>>>>>> 745c870c097cd463b284785e843c26af3a66824d
 ```
 
 ## Veri Kaynağı
