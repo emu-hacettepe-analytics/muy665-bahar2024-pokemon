@@ -1,59 +1,140 @@
----
-title: "Proje X (proje adını yazınız)"
-number-sections: true
----
-
-**Proje sayfamıza hoş geldiniz.**
-
-_Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin._
-
-(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)
-
+\#**Proje sayfamıza hoş geldiniz. Biz Pokemon'lar olarak sizlere bir analiz yaptık.. Şöyle ki;**
 
 # Proje Genel Bakış ve Kapsamı
 
-xxxxxx
-
 # Veri
 
-xxxxxx
+```{r}
+    
+    library(dplyr)
+    library(readr)
+    library(knitr)
+    library(ggplot2)
+    library(leaflet)
+    library(readxl)
+    library(gridExtra)
+
+
+    
+    deprem_analiz <- read_excel("deprem.xlsx")
+    deprem_analiz <- data.frame(lapply(deprem_analiz, function(v) {
+      if (is.character(v)) return(tolower(v))
+      else return(v)
+    }))
+    
+     colnames(deprem_analiz)[1:4] <- c("id", "ilce_adi", "mahalle_adi", "mahalle_kodu")
+    district_sum <- deprem_analiz %>% group_by(ilce_adi) %>% summarise(
+                                                                  total_cok_agir_hasarli = sum(cok_agir_hasarli_bina_sayisi),
+                                                                  total_agir_hasarli = sum(agir_hasarli_bina_sayisi),
+                                                                  total_orta_hasarli = sum(orta_hasarli_bina_sayisi),
+                                                                  total_hafif_hasarli = sum(hafif_hasarli_bina_sayisi),
+                                                                  total_can_kaybi = sum(can_kaybi_sayisi),
+                                                                  total_agir_yarali = sum(agir_yarali_sayisi),
+                                                                  total_hafif_yarali = sum(hafif_yarali_sayisi),
+                                                                  .groups = 'drop')
+    
+district_sum <- data.frame(district_sum)
+
+    district_avg <- deprem_analiz %>% group_by(ilce_adi) %>% summarise(
+                                                                  avg_cok_agir_hasarli = mean(cok_agir_hasarli_bina_sayisi),
+                                                                  avg_agir_hasarli = mean(agir_hasarli_bina_sayisi),
+                                                                  avg_orta_hasarli = mean(orta_hasarli_bina_sayisi),
+                                                                  avg_hafif_hasarli = mean(hafif_hasarli_bina_sayisi),
+                                                                  avg_can_kaybi = mean(can_kaybi_sayisi),
+                                                                  avg_agir_yarali = mean(agir_yarali_sayisi),
+                                                                  avg_hafif_yarali = mean(hafif_yarali_sayisi),
+                                                                 .groups = 'drop')
+    district_avg$ilce_adi <- factor(district_avg$ilce_adi, levels = unique(district_avg$ilce_adi))
+    
+    kable(head(district_avg, 50), caption="Data")
+
+
+
+```
 
 ## Veri Kaynağı
 
-xxxxxx
+[İstanbul Deprem Senaryosu Verileri](https://data.ibb.gov.tr/dataset/deprem-senaryosu-analiz-sonuclari)
 
 ## Veri Hakkında Genel Bilgiler
 
-xxxxxx
-
 ## Tercih Sebebi
-
-xxxxxx
 
 ## Ön İşleme
 
-xxxxxx
-
 # Analiz
 
-xxxxxx
+```{r}
+avg_health1 <- ggplot(district_avg, aes(x = ilce_adi)) +
+
+geom_line(aes(y = avg_can_kaybi, group = 1, color = "Can Kaybı")) +
+geom_line(aes(y = avg_agir_yarali, group = 1, color = "Ağır Yaralı")) +
+                geom_line(aes(y = avg_hafif_yarali, group = 1, color = "Hafif Yaralı")) +
+                ylab("Yaralanmalar ve Can Kayıpları") +
+                xlab("İlçe Adı") +
+                ggtitle("Deprem Hasar Analizi: İlçe Bazında Ortalama Değerler") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+                      plot.title = element_text(color = "black", size = 14, face = "bold"),
+                      axis.title = element_text(color = "black", size = 12, face = "italic"),
+                      axis.text = element_text(color = "black", size = 10),
+                      legend.title = element_text(color = "black", size = 12, face = "bold"),
+                      legend.text = element_text(color = "black", size = 10)) +
+                scale_color_manual(values = c("Can Kaybı" = "red", "Ağır Yaralı" = "blue","Hafif Yaralı" = "darkgreen"), name="Tablo Verileri")
+
+
+```
 
 ## Keşifsel Veri Analizi
 
-xxxxxx
+```{r}
+avg_health1
+
+```
 
 ## Trend Analizi
 
-xxxxxx
+```{r}
+library(ggplot2)
+
+building_avg_line <- ggplot(district_avg, aes(x = ilce_adi)) +
+                geom_line(aes(y = avg_cok_agir_hasarli, group = 1, color = "Çok Ağır Hasarlı")) +geom_line(aes(y = avg_agir_hasarli, group = 1, color = "Ağır Hasarlı")) + geom_line(aes(y = avg_orta_hasarli, group = 1, color = "Orta Hasarlı")) + geom_line(aes(y = avg_hafif_hasarli, group = 1, color = "Hafif Hasarlı")) + ylab("Ortalama Bina Sayısı") + xlab("İlçe Adı") + ggtitle("Deprem Hasar Analizi İlçe Bazında Ortalamalar") +
+                
+theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),  legend.title = element_text(color = "black", size = 12, face = "bold"),
+plot.title = element_text(color = "black", size = 16, face = "bold"),
+axis.title = element_text(color = "black", size = 12, face = "italic"),
+axis.text = element_text(color = "black", size = 10)) +
+scale_color_manual(values = c("Çok Ağır Hasarlı" = "darkred", "Ağır Hasarlı" = "purple", "Orta Hasarlı" = "darkblue", "Hafif Hasarlı" = "darkgreen"), name="Tablo Verileri")
+
+```
 
 ## Model Uydurma
 
-xxxxxx
+```{r}
+building_avg_line
+```
+
+```{r}
+  library(readxl)
+library(ggplot2)
+library(dplyr)
+
+nufus_excel <- read_excel("Veri-2.xlsx") %>%
+  select(ilce, nüfus_sayısı, toplam_can_kaybı) %>%
+  mutate(can_kaybı_nüfus = (toplam_can_kaybı / nüfus_sayısı) * 1000)  
+
+ggplot(nufus_excel, aes(x = ilce, y = toplam_can_kaybı)) +
+  geom_point(aes(size = nüfus_sayısı, color = cut(can_kaybı_nüfus, 
+                                                  breaks = c(0, 0.7, 2, 5),
+                                                  labels = c("Least Dangerous", "Medium Dangerous", "High Dangerous")))) +
+  scale_color_manual(values = c("High Dangerous" = "red", "Medium Dangerous" = "blue", "Least Dangerous" = "green")) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1), 
+        legend.position = "none") +
+  xlab("District") +
+  ylab("Death") +
+  scale_y_continuous(limits = c(0, max(nufus_excel$toplam_can_kaybı) * 1.1)) +
+  scale_size_continuous(range = c(2, 4))
+```
 
 ## Sonuçlar
 
-xxxxxx
-
 # Sonuçlar ve Ana Çıkarımlar
-
-xxxxxx
