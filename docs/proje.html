@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pokemon Takımı Analitik Labı – proje</title>
+<title>Pokemon Takımı Analitik Labı - Proje - İstanbul Deprem Senaryosu</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -150,22 +150,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#proje-genel-bakış-ve-kapsamı" id="toc-proje-genel-bakış-ve-kapsamı" class="nav-link active" data-scroll-target="#proje-genel-bakış-ve-kapsamı">Proje Genel Bakış ve Kapsamı</a></li>
-  <li><a href="#veri" id="toc-veri" class="nav-link" data-scroll-target="#veri">Veri</a>
+  <li><a href="#proje-genel-bakış-ve-kapsamı" id="toc-proje-genel-bakış-ve-kapsamı" class="nav-link active" data-scroll-target="#proje-genel-bakış-ve-kapsamı"><span class="header-section-number">1</span> Proje Genel Bakış ve Kapsamı 📑</a></li>
+  <li><a href="#veri" id="toc-veri" class="nav-link" data-scroll-target="#veri"><span class="header-section-number">2</span> Veri 📉</a>
   <ul class="collapse">
-  <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı">Veri Kaynağı</a></li>
-  <li><a href="#veri-hakkında-genel-bilgiler" id="toc-veri-hakkında-genel-bilgiler" class="nav-link" data-scroll-target="#veri-hakkında-genel-bilgiler">Veri Hakkında Genel Bilgiler</a></li>
-  <li><a href="#tercih-sebebi" id="toc-tercih-sebebi" class="nav-link" data-scroll-target="#tercih-sebebi">Tercih Sebebi</a></li>
-  <li><a href="#ön-işleme" id="toc-ön-işleme" class="nav-link" data-scroll-target="#ön-işleme">Ön İşleme</a></li>
+  <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</a></li>
+  <li><a href="#veri-hakkında-genel-bilgiler" id="toc-veri-hakkında-genel-bilgiler" class="nav-link" data-scroll-target="#veri-hakkında-genel-bilgiler"><span class="header-section-number">2.2</span> Veri Hakkında Genel Bilgiler</a></li>
+  <li><a href="#tercih-sebebi" id="toc-tercih-sebebi" class="nav-link" data-scroll-target="#tercih-sebebi"><span class="header-section-number">2.3</span> Tercih Sebebi</a></li>
   </ul></li>
-  <li><a href="#analiz" id="toc-analiz" class="nav-link" data-scroll-target="#analiz">Analiz</a>
+  <li><a href="#analiz" id="toc-analiz" class="nav-link" data-scroll-target="#analiz"><span class="header-section-number">3</span> Analiz</a>
   <ul class="collapse">
-  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi">Keşifsel Veri Analizi</a></li>
-  <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi">Trend Analizi</a></li>
-  <li><a href="#model-uydurma" id="toc-model-uydurma" class="nav-link" data-scroll-target="#model-uydurma">Model Uydurma</a></li>
-  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar">Sonuçlar</a></li>
+  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.1</span> Keşifsel Veri Analizi</a></li>
+  <li><a href="#ilçelere-göre-depremin-etkisi" id="toc-ilçelere-göre-depremin-etkisi" class="nav-link" data-scroll-target="#ilçelere-göre-depremin-etkisi"><span class="header-section-number">3.2</span> İlçelere Göre Depremin Etkisi ❗</a></li>
+  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar"><span class="header-section-number">3.3</span> Sonuçlar</a></li>
   </ul></li>
-  <li><a href="#sonuçlar-ve-ana-çıkarımlar" id="toc-sonuçlar-ve-ana-çıkarımlar" class="nav-link" data-scroll-target="#sonuçlar-ve-ana-çıkarımlar">Sonuçlar ve Ana Çıkarımlar</a></li>
+  <li><a href="#sonuçlar-ve-ana-çıkarımlar" id="toc-sonuçlar-ve-ana-çıkarımlar" class="nav-link" data-scroll-target="#sonuçlar-ve-ana-çıkarımlar"><span class="header-section-number">4</span> Sonuçlar ve Ana Çıkarımlar</a></li>
   </ul>
 </nav>
 </nav>
@@ -176,79 +174,73 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Proje - İstanbul Deprem Senaryosu</h1>
+</div>
 
 
-<p>#<strong>Proje sayfamıza hoş geldiniz. Biz Pokemon’lar olarak sizlere bir analiz yaptık.. Şöyle ki;</strong></p>
-<section id="proje-genel-bakış-ve-kapsamı" class="level1">
-<h1>Proje Genel Bakış ve Kapsamı</h1>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><strong>Proje sayfamıza hoş geldiniz. Biz Pokemon’lar olarak sizlere bir analiz yaptık.. Şöyle ki;</strong></p>
+<section id="proje-genel-bakış-ve-kapsamı" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Proje Genel Bakış ve Kapsamı 📑</h1>
 </section>
-<section id="veri" class="level1">
-<h1>Veri</h1>
+<section id="veri" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Veri 📉</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readr)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(knitr)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(ggplot2)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(leaflet)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readxl)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(gridExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'gridExtra'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:dplyr':
-
-    combine</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>    deprem_analiz <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"deprem.xlsx"</span>)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    deprem_analiz <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">lapply</span>(deprem_analiz, <span class="cf">function</span>(v) {</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (<span class="fu">is.character</span>(v)) <span class="fu">return</span>(<span class="fu">tolower</span>(v))</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>      <span class="cf">else</span> <span class="fu">return</span>(v)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    }))</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>     <span class="fu">colnames</span>(deprem_analiz)[<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>] <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"id"</span>, <span class="st">"ilce_adi"</span>, <span class="st">"mahalle_adi"</span>, <span class="st">"mahalle_kodu"</span>)</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    district_sum <span class="ot">&lt;-</span> deprem_analiz <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(ilce_adi) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_cok_agir_hasarli =</span> <span class="fu">sum</span>(cok_agir_hasarli_bina_sayisi),</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_agir_hasarli =</span> <span class="fu">sum</span>(agir_hasarli_bina_sayisi),</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_orta_hasarli =</span> <span class="fu">sum</span>(orta_hasarli_bina_sayisi),</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_hafif_hasarli =</span> <span class="fu">sum</span>(hafif_hasarli_bina_sayisi),</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_can_kaybi =</span> <span class="fu">sum</span>(can_kaybi_sayisi),</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_agir_yarali =</span> <span class="fu">sum</span>(agir_yarali_sayisi),</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_hafif_yarali =</span> <span class="fu">sum</span>(hafif_yarali_sayisi),</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">.groups =</span> <span class="st">'drop'</span>)</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>district_sum <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(district_sum)</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    district_avg <span class="ot">&lt;-</span> deprem_analiz <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(ilce_adi) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_cok_agir_hasarli =</span> <span class="fu">mean</span>(cok_agir_hasarli_bina_sayisi),</span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_agir_hasarli =</span> <span class="fu">mean</span>(agir_hasarli_bina_sayisi),</span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_orta_hasarli =</span> <span class="fu">mean</span>(orta_hasarli_bina_sayisi),</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_hafif_hasarli =</span> <span class="fu">mean</span>(hafif_hasarli_bina_sayisi),</span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_can_kaybi =</span> <span class="fu">mean</span>(can_kaybi_sayisi),</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_agir_yarali =</span> <span class="fu">mean</span>(agir_yarali_sayisi),</span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_hafif_yarali =</span> <span class="fu">mean</span>(hafif_yarali_sayisi),</span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>                                                                 <span class="at">.groups =</span> <span class="st">'drop'</span>)</span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    district_avg<span class="sc">$</span>ilce_adi <span class="ot">&lt;-</span> <span class="fu">factor</span>(district_avg<span class="sc">$</span>ilce_adi, <span class="at">levels =</span> <span class="fu">unique</span>(district_avg<span class="sc">$</span>ilce_adi))</span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kable</span>(<span class="fu">head</span>(district_avg, <span class="dv">50</span>), <span class="at">caption=</span><span class="st">"Data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(dplyr)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(knitr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(leaflet)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readxl)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(gridExtra)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    deprem_analiz <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"deprem.xlsx"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    deprem_analiz <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">lapply</span>(deprem_analiz, <span class="cf">function</span>(v) {</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (<span class="fu">is.character</span>(v)) <span class="fu">return</span>(<span class="fu">toupper</span>(v))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      <span class="cf">else</span> <span class="fu">return</span>(v)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    }))</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">colnames</span>(deprem_analiz)[<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>] <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"id"</span>, <span class="st">"ilce_adi"</span>, <span class="st">"mahalle_adi"</span>, <span class="st">"mahalle_kodu"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    district_sum <span class="ot">&lt;-</span> deprem_analiz <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(ilce_adi) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_cok_agir_hasarli =</span> <span class="fu">sum</span>(cok_agir_hasarli_bina_sayisi),</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_agir_hasarli =</span> <span class="fu">sum</span>(agir_hasarli_bina_sayisi),</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_orta_hasarli =</span> <span class="fu">sum</span>(orta_hasarli_bina_sayisi),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_hafif_hasarli =</span> <span class="fu">sum</span>(hafif_hasarli_bina_sayisi),</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_can_kaybi =</span> <span class="fu">sum</span>(can_kaybi_sayisi),</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_agir_yarali =</span> <span class="fu">sum</span>(agir_yarali_sayisi),</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">total_hafif_yarali =</span> <span class="fu">sum</span>(hafif_yarali_sayisi),</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">.groups =</span> <span class="st">'drop'</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>district_sum <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(district_sum)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    district_avg <span class="ot">&lt;-</span> deprem_analiz <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(ilce_adi) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_cok_agir_hasarli =</span> <span class="fu">mean</span>(cok_agir_hasarli_bina_sayisi),</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_agir_hasarli =</span> <span class="fu">mean</span>(agir_hasarli_bina_sayisi),</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_orta_hasarli =</span> <span class="fu">mean</span>(orta_hasarli_bina_sayisi),</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_hafif_hasarli =</span> <span class="fu">mean</span>(hafif_hasarli_bina_sayisi),</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_can_kaybi =</span> <span class="fu">mean</span>(can_kaybi_sayisi),</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_agir_yarali =</span> <span class="fu">mean</span>(agir_yarali_sayisi),</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>                                                                  <span class="at">avg_hafif_yarali =</span> <span class="fu">mean</span>(hafif_yarali_sayisi),</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>                                                                 <span class="at">.groups =</span> <span class="st">'drop'</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    district_avg<span class="sc">$</span>ilce_adi <span class="ot">&lt;-</span> <span class="fu">factor</span>(district_avg<span class="sc">$</span>ilce_adi, <span class="at">levels =</span> <span class="fu">unique</span>(district_avg<span class="sc">$</span>ilce_adi))</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kable</span>(<span class="fu">head</span>(district_avg, <span class="dv">50</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
-<caption>Data</caption>
 <colgroup>
 <col style="width: 10%">
 <col style="width: 15%">
@@ -273,7 +265,7 @@ Attaching package: 'gridExtra'</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">adalar</td>
+<td style="text-align: left;">ADALAR</td>
 <td style="text-align: right;">82.6000000</td>
 <td style="text-align: right;">148.600000</td>
 <td style="text-align: right;">378.80000</td>
@@ -283,7 +275,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">75.600000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">arnavutköy</td>
+<td style="text-align: left;">ARNAVUTKÖY</td>
 <td style="text-align: right;">1.0789474</td>
 <td style="text-align: right;">6.394737</td>
 <td style="text-align: right;">44.84211</td>
@@ -293,7 +285,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">4.710526</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ataşehir</td>
+<td style="text-align: left;">ATAŞEHİR</td>
 <td style="text-align: right;">7.2352941</td>
 <td style="text-align: right;">27.705882</td>
 <td style="text-align: right;">162.11765</td>
@@ -303,7 +295,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">44.411765</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">avcilar</td>
+<td style="text-align: left;">AVCILAR</td>
 <td style="text-align: right;">23.3000000</td>
 <td style="text-align: right;">126.100000</td>
 <td style="text-align: right;">554.50000</td>
@@ -313,7 +305,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">279.900000</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">bahçelievler</td>
+<td style="text-align: left;">BAHÇELİEVLER</td>
 <td style="text-align: right;">72.3636364</td>
 <td style="text-align: right;">135.454545</td>
 <td style="text-align: right;">515.27273</td>
@@ -323,7 +315,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">690.818182</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">bakirköy</td>
+<td style="text-align: left;">BAKIRKÖY</td>
 <td style="text-align: right;">52.1333333</td>
 <td style="text-align: right;">87.066667</td>
 <td style="text-align: right;">226.26667</td>
@@ -333,7 +325,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">307.333333</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">bayrampaşa</td>
+<td style="text-align: left;">BAYRAMPAŞA</td>
 <td style="text-align: right;">55.8181818</td>
 <td style="text-align: right;">107.454545</td>
 <td style="text-align: right;">369.00000</td>
@@ -343,7 +335,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">229.909091</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">bağcilar</td>
+<td style="text-align: left;">BAĞCILAR</td>
 <td style="text-align: right;">36.1818182</td>
 <td style="text-align: right;">82.954545</td>
 <td style="text-align: right;">363.68182</td>
@@ -353,7 +345,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">266.772727</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">başakşehir</td>
+<td style="text-align: left;">BAŞAKŞEHİR</td>
 <td style="text-align: right;">11.5000000</td>
 <td style="text-align: right;">57.500000</td>
 <td style="text-align: right;">297.70000</td>
@@ -363,7 +355,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">67.000000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">beykoz</td>
+<td style="text-align: left;">BEYKOZ</td>
 <td style="text-align: right;">2.5111111</td>
 <td style="text-align: right;">9.844444</td>
 <td style="text-align: right;">61.24444</td>
@@ -373,7 +365,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">6.311111</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">beylikdüzü</td>
+<td style="text-align: left;">BEYLİKDÜZÜ</td>
 <td style="text-align: right;">32.1000000</td>
 <td style="text-align: right;">95.000000</td>
 <td style="text-align: right;">300.40000</td>
@@ -383,7 +375,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">265.500000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">beyoğlu</td>
+<td style="text-align: left;">BEYOĞLU</td>
 <td style="text-align: right;">9.1111111</td>
 <td style="text-align: right;">18.688889</td>
 <td style="text-align: right;">69.60000</td>
@@ -393,7 +385,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">25.355556</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">beşiktaş</td>
+<td style="text-align: left;">BEŞİKTAŞ</td>
 <td style="text-align: right;">2.7826087</td>
 <td style="text-align: right;">8.130435</td>
 <td style="text-align: right;">45.78261</td>
@@ -403,7 +395,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">10.434783</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">büyükçekmece</td>
+<td style="text-align: left;">BÜYÜKÇEKMECE</td>
 <td style="text-align: right;">18.2916667</td>
 <td style="text-align: right;">68.125000</td>
 <td style="text-align: right;">275.91667</td>
@@ -413,7 +405,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">73.083333</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">esenler</td>
+<td style="text-align: left;">ESENLER</td>
 <td style="text-align: right;">24.4375000</td>
 <td style="text-align: right;">50.812500</td>
 <td style="text-align: right;">233.68750</td>
@@ -423,7 +415,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">195.812500</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">esenyurt</td>
+<td style="text-align: left;">ESENYURT</td>
 <td style="text-align: right;">13.0930233</td>
 <td style="text-align: right;">41.116279</td>
 <td style="text-align: right;">183.97674</td>
@@ -433,7 +425,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">126.534884</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">eyüp</td>
+<td style="text-align: left;">EYÜP</td>
 <td style="text-align: right;">10.7142857</td>
 <td style="text-align: right;">30.035714</td>
 <td style="text-align: right;">135.50000</td>
@@ -443,7 +435,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">38.571429</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">fatih</td>
+<td style="text-align: left;">FATİH</td>
 <td style="text-align: right;">36.5438596</td>
 <td style="text-align: right;">61.333333</td>
 <td style="text-align: right;">174.54386</td>
@@ -453,7 +445,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">118.719298</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">gaziosmanpaşa</td>
+<td style="text-align: left;">GAZİOSMANPAŞA</td>
 <td style="text-align: right;">8.0625000</td>
 <td style="text-align: right;">25.187500</td>
 <td style="text-align: right;">142.25000</td>
@@ -463,7 +455,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">56.125000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">güngören</td>
+<td style="text-align: left;">GÜNGÖREN</td>
 <td style="text-align: right;">31.0909091</td>
 <td style="text-align: right;">55.545454</td>
 <td style="text-align: right;">218.81818</td>
@@ -473,7 +465,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">317.818182</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">kadiköy</td>
+<td style="text-align: left;">KADIKÖY</td>
 <td style="text-align: right;">9.9047619</td>
 <td style="text-align: right;">24.047619</td>
 <td style="text-align: right;">115.52381</td>
@@ -483,7 +475,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">54.047619</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">kartal</td>
+<td style="text-align: left;">KARTAL</td>
 <td style="text-align: right;">9.9500000</td>
 <td style="text-align: right;">29.650000</td>
 <td style="text-align: right;">164.10000</td>
@@ -493,7 +485,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">57.400000</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">kağithane</td>
+<td style="text-align: left;">KAĞITHANE</td>
 <td style="text-align: right;">4.9473684</td>
 <td style="text-align: right;">14.473684</td>
 <td style="text-align: right;">90.89474</td>
@@ -503,7 +495,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">31.631579</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">küçükçekmece</td>
+<td style="text-align: left;">KÜÇÜKÇEKMECE</td>
 <td style="text-align: right;">59.0476190</td>
 <td style="text-align: right;">124.571429</td>
 <td style="text-align: right;">427.52381</td>
@@ -513,7 +505,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">353.000000</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">maltepe</td>
+<td style="text-align: left;">MALTEPE</td>
 <td style="text-align: right;">13.1666667</td>
 <td style="text-align: right;">38.333333</td>
 <td style="text-align: right;">188.22222</td>
@@ -523,7 +515,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">79.888889</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">pendik</td>
+<td style="text-align: left;">PENDİK</td>
 <td style="text-align: right;">7.6111111</td>
 <td style="text-align: right;">28.916667</td>
 <td style="text-align: right;">156.25000</td>
@@ -533,7 +525,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">43.500000</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">sancaktepe</td>
+<td style="text-align: left;">SANCAKTEPE</td>
 <td style="text-align: right;">4.4210526</td>
 <td style="text-align: right;">21.894737</td>
 <td style="text-align: right;">133.63158</td>
@@ -543,7 +535,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">30.210526</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">sariyer</td>
+<td style="text-align: left;">SARIYER</td>
 <td style="text-align: right;">2.6842105</td>
 <td style="text-align: right;">9.605263</td>
 <td style="text-align: right;">65.42105</td>
@@ -553,7 +545,27 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">8.973684</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">silivri</td>
+<td style="text-align: left;">SULTANBEYLİ</td>
+<td style="text-align: right;">7.2666667</td>
+<td style="text-align: right;">43.200000</td>
+<td style="text-align: right;">263.26667</td>
+<td style="text-align: right;">548.33333</td>
+<td style="text-align: right;">4.8666667</td>
+<td style="text-align: right;">2.5333333</td>
+<td style="text-align: right;">50.400000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SULTANGAZİ</td>
+<td style="text-align: right;">4.0666667</td>
+<td style="text-align: right;">16.333333</td>
+<td style="text-align: right;">120.26667</td>
+<td style="text-align: right;">458.93333</td>
+<td style="text-align: right;">3.8000000</td>
+<td style="text-align: right;">1.8000000</td>
+<td style="text-align: right;">37.066667</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SİLİVRİ</td>
 <td style="text-align: right;">12.6857143</td>
 <td style="text-align: right;">48.771429</td>
 <td style="text-align: right;">204.42857</td>
@@ -563,27 +575,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">16.171429</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">sultanbeyli</td>
-<td style="text-align: right;">7.2666667</td>
-<td style="text-align: right;">43.200000</td>
-<td style="text-align: right;">263.26667</td>
-<td style="text-align: right;">548.33333</td>
-<td style="text-align: right;">4.8666667</td>
-<td style="text-align: right;">2.5333333</td>
-<td style="text-align: right;">50.400000</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">sultangazi</td>
-<td style="text-align: right;">4.0666667</td>
-<td style="text-align: right;">16.333333</td>
-<td style="text-align: right;">120.26667</td>
-<td style="text-align: right;">458.93333</td>
-<td style="text-align: right;">3.8000000</td>
-<td style="text-align: right;">1.8000000</td>
-<td style="text-align: right;">37.066667</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">tuzla</td>
+<td style="text-align: left;">TUZLA</td>
 <td style="text-align: right;">26.2352941</td>
 <td style="text-align: right;">80.588235</td>
 <td style="text-align: right;">312.35294</td>
@@ -593,7 +585,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">92.058824</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">zeytinburnu</td>
+<td style="text-align: left;">ZEYTİNBURNU</td>
 <td style="text-align: right;">39.2307692</td>
 <td style="text-align: right;">78.846154</td>
 <td style="text-align: right;">292.23077</td>
@@ -603,7 +595,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">246.615385</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">çatalca</td>
+<td style="text-align: left;">ÇATALCA</td>
 <td style="text-align: right;">1.6153846</td>
 <td style="text-align: right;">7.717949</td>
 <td style="text-align: right;">42.46154</td>
@@ -613,7 +605,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">1.717949</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">çekmeköy</td>
+<td style="text-align: left;">ÇEKMEKÖY</td>
 <td style="text-align: right;">0.7619048</td>
 <td style="text-align: right;">5.380952</td>
 <td style="text-align: right;">47.52381</td>
@@ -623,7 +615,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">5.190476</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ümraniye</td>
+<td style="text-align: left;">ÜMRANİYE</td>
 <td style="text-align: right;">3.0000000</td>
 <td style="text-align: right;">15.257143</td>
 <td style="text-align: right;">103.60000</td>
@@ -633,7 +625,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">20.114286</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">üsküdar</td>
+<td style="text-align: left;">ÜSKÜDAR</td>
 <td style="text-align: right;">4.4242424</td>
 <td style="text-align: right;">14.939394</td>
 <td style="text-align: right;">101.24242</td>
@@ -643,7 +635,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">25.727273</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">şile</td>
+<td style="text-align: left;">ŞİLE</td>
 <td style="text-align: right;">0.3548387</td>
 <td style="text-align: right;">1.709677</td>
 <td style="text-align: right;">12.48387</td>
@@ -653,7 +645,7 @@ Attaching package: 'gridExtra'</code></pre>
 <td style="text-align: right;">0.016129</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">şişli</td>
+<td style="text-align: left;">ŞİŞLİ</td>
 <td style="text-align: right;">2.7200000</td>
 <td style="text-align: right;">8.280000</td>
 <td style="text-align: right;">40.32000</td>
@@ -666,155 +658,138 @@ Attaching package: 'gridExtra'</code></pre>
 </table>
 </div>
 </div>
-<section id="veri-kaynağı" class="level2">
-<h2 class="anchored" data-anchor-id="veri-kaynağı">Veri Kaynağı</h2>
-<p><a href="https://data.ibb.gov.tr/dataset/deprem-senaryosu-analiz-sonuclari">İstanbul Deprem Senaryosu Verileri</a></p>
-</section>
-<<<<<<< HEAD
-<section id="veri-hakkında-genel-bilgiler" class="level2">
-<h2 class="anchored" data-anchor-id="veri-hakkında-genel-bilgiler">Veri Hakkında Genel Bilgiler</h2>
-=======
-<section id="veri" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Veri</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="co">#install.packages("stringr")</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readr)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(knitr)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(ggplot2)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(leaflet)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readxl)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(gridExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'gridExtra'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:dplyr':
-
-    combine</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(readxl)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(stringi)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(stringr)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz &lt;- read_excel("deprem.xlsx")</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- stri_trans_general(deprem_analiz$ilce_adi, "latin-ascii")</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>   <span class="co">#deprem_analiz$ilce_adi &lt;- iconv(deprem_analiz$ilce_adi, from = "latin1", to = "UTF-8")</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    deprem_analiz <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"deprem-senaryosu-analiz-sonuclar.csv"</span>)</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- gsub("Ý", "İ", deprem_analiz$ilce_adi, fixed = TRUE)</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- gsub("Ð", "Ğ", deprem_analiz$ilce_adi, fixed = TRUE)</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- gsub("Þ", "Ş", deprem_analiz$ilce_adi, fixed = TRUE)</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="co">#deprem_analiz$ilce_adi &lt;- gsub("Þ", "Ş", deprem_analiz$ilce_adi, fixed = TRUE)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 <section id="veri-kaynağı" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</h2>
-<p>xxxxxx</p>
->>>>>>> 745c870c097cd463b284785e843c26af3a66824d
+<p>Veri için kullanılan kaynağa aşağıdaki linkten erişebilirsiniz;</p>
+<p><a href="https://data.ibb.gov.tr/dataset/deprem-senaryosu-analiz-sonuclari">İstanbul Deprem Senaryosu Verileri</a></p>
 </section>
-<section id="tercih-sebebi" class="level2">
-<h2 class="anchored" data-anchor-id="tercih-sebebi">Tercih Sebebi</h2>
+<section id="veri-hakkında-genel-bilgiler" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="veri-hakkında-genel-bilgiler"><span class="header-section-number">2.2</span> Veri Hakkında Genel Bilgiler</h2>
+<p>eklenecek</p>
 </section>
-<section id="ön-işleme" class="level2">
-<h2 class="anchored" data-anchor-id="ön-işleme">Ön İşleme</h2>
+<section id="tercih-sebebi" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="tercih-sebebi"><span class="header-section-number">2.3</span> Tercih Sebebi</h2>
+<p>eklenecek</p>
 </section>
 </section>
-<section id="analiz" class="level1">
-<h1>Analiz</h1>
+<section id="analiz" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Analiz</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>avg_health1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(district_avg, <span class="fu">aes</span>(<span class="at">x =</span> ilce_adi)) <span class="sc">+</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_can_kaybi, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Can Kaybı"</span>)) <span class="sc">+</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_agir_yarali, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Ağır Yaralı"</span>)) <span class="sc">+</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>                <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_hafif_yarali, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Hafif Yaralı"</span>)) <span class="sc">+</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>                <span class="fu">ylab</span>(<span class="st">"Yaralanmalar ve Can Kayıpları"</span>) <span class="sc">+</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>                <span class="fu">xlab</span>(<span class="st">"İlçe Adı"</span>) <span class="sc">+</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>                <span class="fu">ggtitle</span>(<span class="st">"Deprem Hasar Analizi: İlçe Bazında Ortalama Değerler"</span>) <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust=</span><span class="dv">1</span>),</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>                      <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">14</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>                      <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">12</span>, <span class="at">face =</span> <span class="st">"italic"</span>),</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">10</span>),</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>                      <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">12</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>                      <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">10</span>)) <span class="sc">+</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>                <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Can Kaybı"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"Ağır Yaralı"</span> <span class="ot">=</span> <span class="st">"blue"</span>,<span class="st">"Hafif Yaralı"</span> <span class="ot">=</span> <span class="st">"darkgreen"</span>), <span class="at">name=</span><span class="st">"Tablo Verileri"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringi)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>avg_health1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(district_avg, <span class="fu">aes</span>(<span class="at">x =</span> ilce_adi)) <span class="sc">+</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_can_kaybi, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Can Kaybı"</span>), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_agir_yarali, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Ağır Yaralı"</span>), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_hafif_yarali, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Hafif Yaralı"</span> ), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="cn">NULL</span>)) <span class="sc">+</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Yaralanmalar ve Can Kayıpları"</span>) <span class="sc">+</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"İlçe Adı"</span>) <span class="sc">+</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Deprem Hasar Analizi: İlçe Bazında Ortalama Değerler"</span>) <span class="sc">+</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_base</span>() <span class="sc">+</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust =</span> <span class="dv">1</span>),</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">14</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">vjust =</span> <span class="fl">1.5</span>),</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">12</span>, <span class="at">face =</span> <span class="st">"italic"</span>),</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">8</span>),</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Can Kaybı"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"Ağır Yaralı"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"Hafif Yaralı"</span> <span class="ot">=</span> <span class="st">"darkgreen"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
 </div>
-<section id="keşifsel-veri-analizi" class="level2">
-<h2 class="anchored" data-anchor-id="keşifsel-veri-analizi">Keşifsel Veri Analizi</h2>
+</div>
+<section id="keşifsel-veri-analizi" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">3.1</span> Keşifsel Veri Analizi</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>avg_health1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>avg_health1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
 <p><img src="proje_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>✔️Yukarıdaki verilerde, her ilçenin bir felaket anında kaç kişinin öleceğini veya yaralanacağını görebiliyoruz. En yüksek değerlere sahip olan ilçelere odaklanıyoruz ve bu ilçelerin en yüksek değeri almasının nedenini anlamaya çalışıyoruz. Acaba bu ilçeler gerçekten tehlikeli mi, yoksa sadece büyük bir nüfusa mı sahipler? Aşağıdaki grafiklerde ise bu sorunun cevabını ararken nüfusu da dikkate alacağız.</p>
 </section>
-<section id="trend-analizi" class="level2">
-<h2 class="anchored" data-anchor-id="trend-analizi">Trend Analizi</h2>
+<section id="ilçelere-göre-depremin-etkisi" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="ilçelere-göre-depremin-etkisi"><span class="header-section-number">3.2</span> İlçelere Göre Depremin Etkisi ❗</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>building_avg_line <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(district_avg, <span class="fu">aes</span>(<span class="at">x =</span> ilce_adi)) <span class="sc">+</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>                <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_cok_agir_hasarli, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Çok Ağır Hasarlı"</span>)) <span class="sc">+</span><span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_agir_hasarli, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Ağır Hasarlı"</span>)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_orta_hasarli, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Orta Hasarlı"</span>)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_hafif_hasarli, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Hafif Hasarlı"</span>)) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Ortalama Bina Sayısı"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"İlçe Adı"</span>) <span class="sc">+</span> <span class="fu">ggtitle</span>(<span class="st">"Deprem Hasar Analizi İlçe Bazında Ortalamalar"</span>) <span class="sc">+</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>                </span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust =</span> <span class="dv">1</span>),  <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">12</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">12</span>, <span class="at">face =</span> <span class="st">"italic"</span>),</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">10</span>)) <span class="sc">+</span></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Çok Ağır Hasarlı"</span> <span class="ot">=</span> <span class="st">"darkred"</span>, <span class="st">"Ağır Hasarlı"</span> <span class="ot">=</span> <span class="st">"purple"</span>, <span class="st">"Orta Hasarlı"</span> <span class="ot">=</span> <span class="st">"darkblue"</span>, <span class="st">"Hafif Hasarlı"</span> <span class="ot">=</span> <span class="st">"darkgreen"</span>), <span class="at">name=</span><span class="st">"Tablo Verileri"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>building_avg_line <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(district_avg, <span class="fu">aes</span>(<span class="at">x =</span> ilce_adi)) <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_cok_agir_hasarli, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Çok Ağır Hasarlı"</span>),<span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_agir_hasarli, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Ağır Hasarlı"</span>),<span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_orta_hasarli, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Orta Hasarlı"</span>),<span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> avg_hafif_hasarli, <span class="at">group =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"Hafif Hasarlı"</span>),<span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="cn">NULL</span>))<span class="sc">+</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Ortalama Bina Sayısı"</span>) <span class="sc">+</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"İlçe Adı"</span>) <span class="sc">+</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Deprem Hasar Analizi İlçe Bazında Ortalamalar"</span>) <span class="sc">+</span>  </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_base</span>() <span class="sc">+</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust =</span> <span class="dv">1</span>),  </span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>),</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">vjust =</span> <span class="fl">1.5</span>),</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">12</span>, <span class="at">face =</span> <span class="st">"italic"</span>),</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">8</span>)) <span class="sc">+</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Çok Ağır Hasarlı"</span> <span class="ot">=</span> <span class="st">"darkred"</span>, <span class="st">"Ağır Hasarlı"</span> <span class="ot">=</span> <span class="st">"purple"</span>, <span class="st">"Orta Hasarlı"</span> <span class="ot">=</span> <span class="st">"darkblue"</span>, <span class="st">"Hafif Hasarlı"</span> <span class="ot">=</span> <span class="st">"darkgreen"</span>))</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>building_avg_line</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="proje_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
-</section>
-<section id="model-uydurma" class="level2">
-<h2 class="anchored" data-anchor-id="model-uydurma">Model Uydurma</h2>
+</div>
+<p>Bu grafik, her ilçenin ortalama bina sayısını ve hasar gören binaların sınıflandırmasını göstermektedir. Önceki grafikle benzerlik göstermektedir, bu da <strong>ölümler ile hasarlı bina sayısı arasında bir ilişki olabileceğini düşündürmektedir.</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>building_avg_line</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>nufus_excel <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"Veri-2.xlsx"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ilce, nüfus_sayısı, toplam_can_kaybı) <span class="sc">%&gt;%</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(can_kaybı_nüfus <span class="ot">=</span> (toplam_can_kaybı <span class="sc">/</span> nüfus_sayısı) <span class="sc">*</span> <span class="dv">1000</span>)  </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(nufus_excel, <span class="fu">aes</span>(<span class="at">x =</span> ilce, <span class="at">y =</span> toplam_can_kaybı)) <span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size =</span> nüfus_sayısı, <span class="at">color =</span> <span class="fu">cut</span>(can_kaybı_nüfus, <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.7</span>, <span class="dv">2</span>, <span class="dv">5</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Least Dangerous"</span>, <span class="st">"Medium Dangerous"</span>, <span class="st">"High Dangerous"</span>)))) <span class="sc">+</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"High Dangerous"</span> <span class="ot">=</span> <span class="st">"darkred"</span>, <span class="st">"Medium Dangerous"</span> <span class="ot">=</span> <span class="st">"darkblue"</span>, <span class="st">"Least Dangerous"</span> <span class="ot">=</span> <span class="st">"darkgreen"</span>)) <span class="sc">+</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_base</span>() <span class="sc">+</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust =</span> <span class="dv">1</span>, <span class="at">size =</span> <span class="dv">8</span>), </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>, <span class="at">face =</span> <span class="st">"italic"</span>),  <span class="co"># x ekseni başlığı boyutu</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>, <span class="at">face =</span> <span class="st">"italic"</span>)) <span class="sc">+</span>  <span class="co"># y ekseni başlığı boyutu</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Semt"</span>) <span class="sc">+</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Ölüm Sayısı"</span>) <span class="sc">+</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">max</span>(nufus_excel<span class="sc">$</span>toplam_can_kaybı) <span class="sc">*</span> <span class="fl">1.1</span>)) <span class="sc">+</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_continuous</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">6</span>), <span class="at">guide =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">size =</span> <span class="fu">guide_legend</span>(<span class="at">override.aes =</span> <span class="fu">list</span>(<span class="at">color =</span> <span class="st">"darkred"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
 <p><img src="proje_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(readxl)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>nufus_excel <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"Veri-2.xlsx"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ilce, nüfus_sayısı, toplam_can_kaybı) <span class="sc">%&gt;%</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(can_kaybı_nüfus <span class="ot">=</span> (toplam_can_kaybı <span class="sc">/</span> nüfus_sayısı) <span class="sc">*</span> <span class="dv">1000</span>)  </span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(nufus_excel, <span class="fu">aes</span>(<span class="at">x =</span> ilce, <span class="at">y =</span> toplam_can_kaybı)) <span class="sc">+</span></span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size =</span> nüfus_sayısı, <span class="at">color =</span> <span class="fu">cut</span>(can_kaybı_nüfus, </span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>                                                  <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.7</span>, <span class="dv">2</span>, <span class="dv">5</span>),</span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>                                                  <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Least Dangerous"</span>, <span class="st">"Medium Dangerous"</span>, <span class="st">"High Dangerous"</span>)))) <span class="sc">+</span></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"High Dangerous"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"Medium Dangerous"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"Least Dangerous"</span> <span class="ot">=</span> <span class="st">"green"</span>)) <span class="sc">+</span></span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust =</span> <span class="dv">1</span>), </span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"District"</span>) <span class="sc">+</span></span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Death"</span>) <span class="sc">+</span></span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">max</span>(nufus_excel<span class="sc">$</span>toplam_can_kaybı) <span class="sc">*</span> <span class="fl">1.1</span>)) <span class="sc">+</span></span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_continuous</span>(<span class="at">range =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="proje_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
+<p>📍 Noktaların alanı bize ilçenin nüfus büyüklüğünü gösterir ve renkler, her ilçenin tehlike seviyelerini belirlenen eşik değerlere dayanarak gösterir.</p>
+<p>📍Bu alanda gerçekleşme ihtimali olan ölümlerin nüfus ile ilişkisi gösterilmektedir.</p>
+<p>📍Eğer ölümler diğerlerine göre nispeten küçük nüfusa sahipse bile yüksekse, bu ilçenin yüksek tehlikeli bir bölge olduğunu söyleyebiliriz. Eğer nüfus büyükse ve ölümler nispeten azsa, bu bölgenin diğerlerinden daha güvenli olduğunu varsayabiliriz.</p>
 </section>
-<section id="sonuçlar" class="level2">
-<h2 class="anchored" data-anchor-id="sonuçlar">Sonuçlar</h2>
+<section id="sonuçlar" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sonuçlar"><span class="header-section-number">3.3</span> Sonuçlar</h2>
 </section>
 </section>
-<section id="sonuçlar-ve-ana-çıkarımlar" class="level1">
-<h1>Sonuçlar ve Ana Çıkarımlar</h1>
+<section id="sonuçlar-ve-ana-çıkarımlar" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Sonuçlar ve Ana Çıkarımlar</h1>
 
 
 </section>

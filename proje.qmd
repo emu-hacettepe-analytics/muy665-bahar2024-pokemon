@@ -1,49 +1,36 @@
-<<<<<<< HEAD
-\#**Proje sayfamıza hoş geldiniz. Biz Pokemon'lar olarak sizlere bir analiz yaptık.. Şöyle ki;**
-=======
 ---
-title: "Proje X (proje adını yazınız)"
+title: "Proje - İstanbul Deprem Senaryosu"
 number-sections: true
+
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
 ---
 
-**Proje sayfamıza hoş geldiniz.**
+**Proje sayfamıza hoş geldiniz. Biz Pokemon'lar olarak sizlere bir analiz yaptık.. Şöyle ki;**
 
-*Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
+# Proje Genel Bakış ve Kapsamı 📑
 
-(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)
->>>>>>> 745c870c097cd463b284785e843c26af3a66824d
+# Veri 📉
 
-# Proje Genel Bakış ve Kapsamı
-
-# Veri
-
-```{r}
-<<<<<<< HEAD
-    
+```{r message=FALSE}
     library(dplyr)
-=======
- #install.packages("stringr")
-library(dplyr)
->>>>>>> 745c870c097cd463b284785e843c26af3a66824d
     library(readr)
     library(knitr)
     library(ggplot2)
     library(leaflet)
     library(readxl)
     library(gridExtra)
-<<<<<<< HEAD
-
-
-    
     deprem_analiz <- read_excel("deprem.xlsx")
     deprem_analiz <- data.frame(lapply(deprem_analiz, function(v) {
-      if (is.character(v)) return(tolower(v))
+      if (is.character(v)) return(toupper(v))
       else return(v)
     }))
     
-     colnames(deprem_analiz)[1:4] <- c("id", "ilce_adi", "mahalle_adi", "mahalle_kodu")
+    colnames(deprem_analiz)[1:4] <- c("id", "ilce_adi", "mahalle_adi", "mahalle_kodu")
     district_sum <- deprem_analiz %>% group_by(ilce_adi) %>% summarise(
-                                                                  total_cok_agir_hasarli = sum(cok_agir_hasarli_bina_sayisi),
+    total_cok_agir_hasarli = sum(cok_agir_hasarli_bina_sayisi),
                                                                   total_agir_hasarli = sum(agir_hasarli_bina_sayisi),
                                                                   total_orta_hasarli = sum(orta_hasarli_bina_sayisi),
                                                                   total_hafif_hasarli = sum(hafif_hasarli_bina_sayisi),
@@ -65,108 +52,124 @@ district_sum <- data.frame(district_sum)
                                                                  .groups = 'drop')
     district_avg$ilce_adi <- factor(district_avg$ilce_adi, levels = unique(district_avg$ilce_adi))
     
-    kable(head(district_avg, 50), caption="Data")
+    kable(head(district_avg, 50))
 
 
-
-=======
-    library(readxl)
-    library(stringi)
-    library(stringr)
-    
-    #deprem_analiz <- read_excel("deprem.xlsx")
-    #deprem_analiz$ilce_adi <- stri_trans_general(deprem_analiz$ilce_adi, "latin-ascii")
-   #deprem_analiz$ilce_adi <- iconv(deprem_analiz$ilce_adi, from = "latin1", to = "UTF-8")
-    deprem_analiz <- read.csv("deprem-senaryosu-analiz-sonuclar.csv")
-    #deprem_analiz$ilce_adi <- gsub("Ý", "İ", deprem_analiz$ilce_adi, fixed = TRUE)
-    #deprem_analiz$ilce_adi <- gsub("Ð", "Ğ", deprem_analiz$ilce_adi, fixed = TRUE)
-    #deprem_analiz$ilce_adi <- gsub("Þ", "Ş", deprem_analiz$ilce_adi, fixed = TRUE)
-    #deprem_analiz$ilce_adi <- gsub("Þ", "Ş", deprem_analiz$ilce_adi, fixed = TRUE)
->>>>>>> 745c870c097cd463b284785e843c26af3a66824d
 ```
 
 ## Veri Kaynağı
+
+Veri için kullanılan kaynağa aşağıdaki linkten erişebilirsiniz;
 
 [İstanbul Deprem Senaryosu Verileri](https://data.ibb.gov.tr/dataset/deprem-senaryosu-analiz-sonuclari)
 
 ## Veri Hakkında Genel Bilgiler
 
+eklenecek
+
 ## Tercih Sebebi
 
-## Ön İşleme
+eklenecek
 
 # Analiz
 
-```{r}
-avg_health1 <- ggplot(district_avg, aes(x = ilce_adi)) +
+```{r message=FALSE}
+library(readxl)
+library(stringi)
+library(stringr)
+library(ggplot2)
+library(ggthemes)
 
-geom_line(aes(y = avg_can_kaybi, group = 1, color = "Can Kaybı")) +
-geom_line(aes(y = avg_agir_yarali, group = 1, color = "Ağır Yaralı")) +
-                geom_line(aes(y = avg_hafif_yarali, group = 1, color = "Hafif Yaralı")) +
-                ylab("Yaralanmalar ve Can Kayıpları") +
-                xlab("İlçe Adı") +
-                ggtitle("Deprem Hasar Analizi: İlçe Bazında Ortalama Değerler") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
-                      plot.title = element_text(color = "black", size = 14, face = "bold"),
-                      axis.title = element_text(color = "black", size = 12, face = "italic"),
-                      axis.text = element_text(color = "black", size = 10),
-                      legend.title = element_text(color = "black", size = 12, face = "bold"),
-                      legend.text = element_text(color = "black", size = 10)) +
-                scale_color_manual(values = c("Can Kaybı" = "red", "Ağır Yaralı" = "blue","Hafif Yaralı" = "darkgreen"), name="Tablo Verileri")
+avg_health1 <- ggplot(district_avg, aes(x = ilce_adi)) +
+  geom_line(aes(y = avg_can_kaybi, group = 1, color = "Can Kaybı"), size = 1) +
+  geom_line(aes(y = avg_agir_yarali, group = 1, color = "Ağır Yaralı"), size = 1) +
+  geom_line(aes(y = avg_hafif_yarali, group = 1, color = "Hafif Yaralı" ), size = 1) +
+  guides(color = guide_legend(title = NULL)) +
+  ylab("Yaralanmalar ve Can Kayıpları") +
+  xlab("İlçe Adı") +
+  ggtitle("Deprem Hasar Analizi: İlçe Bazında Ortalama Değerler") +
+  theme_base() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        plot.title = element_text(color = "black", size = 14, face = "bold", hjust = 0.5, vjust = 1.5),
+        legend.position = "bottom",
+        axis.title = element_text(color = "black", size = 12, face = "italic"),
+        axis.text = element_text(color = "black", size = 8),
+        legend.text = element_text(color = "black", size = 10)) +
+  scale_color_manual(values = c("Can Kaybı" = "red", "Ağır Yaralı" = "blue", "Hafif Yaralı" = "darkgreen"))
+
 
 
 ```
 
 ## Keşifsel Veri Analizi
 
-```{r}
-avg_health1
+```{r message=FALSE}
 
+avg_health1
 ```
 
-## Trend Analizi
+✔️Yukarıdaki verilerde, her ilçenin bir felaket anında kaç kişinin öleceğini veya yaralanacağını görebiliyoruz. En yüksek değerlere sahip olan ilçelere odaklanıyoruz ve bu ilçelerin en yüksek değeri almasının nedenini anlamaya çalışıyoruz. Acaba bu ilçeler gerçekten tehlikeli mi, yoksa sadece büyük bir nüfusa mı sahipler? Aşağıdaki grafiklerde ise bu sorunun cevabını ararken nüfusu da dikkate alacağız.
 
-```{r}
-library(ggplot2)
+## İlçelere Göre Depremin Etkisi ❗
+
+```{r message=FALSE}
+library(ggthemes)
 
 building_avg_line <- ggplot(district_avg, aes(x = ilce_adi)) +
-                geom_line(aes(y = avg_cok_agir_hasarli, group = 1, color = "Çok Ağır Hasarlı")) +geom_line(aes(y = avg_agir_hasarli, group = 1, color = "Ağır Hasarlı")) + geom_line(aes(y = avg_orta_hasarli, group = 1, color = "Orta Hasarlı")) + geom_line(aes(y = avg_hafif_hasarli, group = 1, color = "Hafif Hasarlı")) + ylab("Ortalama Bina Sayısı") + xlab("İlçe Adı") + ggtitle("Deprem Hasar Analizi İlçe Bazında Ortalamalar") +
-                
-theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),  legend.title = element_text(color = "black", size = 12, face = "bold"),
-plot.title = element_text(color = "black", size = 16, face = "bold"),
-axis.title = element_text(color = "black", size = 12, face = "italic"),
-axis.text = element_text(color = "black", size = 10)) +
-scale_color_manual(values = c("Çok Ağır Hasarlı" = "darkred", "Ağır Hasarlı" = "purple", "Orta Hasarlı" = "darkblue", "Hafif Hasarlı" = "darkgreen"), name="Tablo Verileri")
+  geom_line(aes(y = avg_cok_agir_hasarli, group = 1, color = "Çok Ağır Hasarlı"),size = 1) +
+  geom_line(aes(y = avg_agir_hasarli, group = 1, color = "Ağır Hasarlı"),size = 1) +
+  geom_line(aes(y = avg_orta_hasarli, group = 1, color = "Orta Hasarlı"),size = 1) +
+  geom_line(aes(y = avg_hafif_hasarli, group = 1, color = "Hafif Hasarlı"),size = 1) +
+  guides(color = guide_legend(title = NULL))+
+  ylab("Ortalama Bina Sayısı") +
+  xlab("İlçe Adı") +
+  ggtitle("Deprem Hasar Analizi İlçe Bazında Ortalamalar") +  
+  theme_base() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),  
+        legend.text = element_text(size = 8),
+        legend.position = "bottom",
+        plot.title = element_text(color = "black", size = 16, face = "bold", hjust = 0.5, vjust = 1.5),
+        axis.title = element_text(color = "black", size = 12, face = "italic"),
+        axis.text = element_text(color = "black", size = 8)) +
+  scale_color_manual(values = c("Çok Ağır Hasarlı" = "darkred", "Ağır Hasarlı" = "purple", "Orta Hasarlı" = "darkblue", "Hafif Hasarlı" = "darkgreen"))
 
-```
-
-## Model Uydurma
-
-```{r}
 building_avg_line
+
 ```
 
-```{r}
-  library(readxl)
-library(ggplot2)
-library(dplyr)
+Bu grafik, her ilçenin ortalama bina sayısını ve hasar gören binaların sınıflandırmasını göstermektedir. Önceki grafikle benzerlik göstermektedir, bu da **ölümler ile hasarlı bina sayısı arasında bir ilişki olabileceğini düşündürmektedir.**
 
-nufus_excel <- read_excel("Veri-2.xlsx") %>%
+```{r message=FALSE}
+
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
+
+nufus_excel <- read_excel("Veri-2.xlsx") %>% 
   select(ilce, nüfus_sayısı, toplam_can_kaybı) %>%
   mutate(can_kaybı_nüfus = (toplam_can_kaybı / nüfus_sayısı) * 1000)  
 
 ggplot(nufus_excel, aes(x = ilce, y = toplam_can_kaybı)) +
-  geom_point(aes(size = nüfus_sayısı, color = cut(can_kaybı_nüfus, 
-                                                  breaks = c(0, 0.7, 2, 5),
-                                                  labels = c("Least Dangerous", "Medium Dangerous", "High Dangerous")))) +
-  scale_color_manual(values = c("High Dangerous" = "red", "Medium Dangerous" = "blue", "Least Dangerous" = "green")) +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1), 
-        legend.position = "none") +
-  xlab("District") +
-  ylab("Death") +
+  geom_point(aes(size = nüfus_sayısı, color = cut(can_kaybı_nüfus, breaks = c(0, 0.7, 2, 5), labels = c("Least Dangerous", "Medium Dangerous", "High Dangerous")))) +
+  scale_color_manual(values = c("High Dangerous" = "darkred", "Medium Dangerous" = "darkblue", "Least Dangerous" = "darkgreen")) +
+  theme_base() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 8), 
+        legend.position = "none",
+        axis.title.x = element_text(size = 12, face = "italic"),  # x ekseni başlığı boyutu
+        axis.title.y = element_text(size = 12, face = "italic")) +  # y ekseni başlığı boyutu
+  xlab("Semt") +
+  ylab("Ölüm Sayısı") +
   scale_y_continuous(limits = c(0, max(nufus_excel$toplam_can_kaybı) * 1.1)) +
-  scale_size_continuous(range = c(2, 4))
+  scale_size_continuous(range = c(2, 6), guide = FALSE) +
+  guides(size = guide_legend(override.aes = list(color = "darkred")))
 ```
+
+📍 Noktaların alanı bize ilçenin nüfus büyüklüğünü gösterir ve renkler, her ilçenin tehlike seviyelerini belirlenen eşik değerlere dayanarak gösterir.
+
+📍Bu alanda gerçekleşme ihtimali olan ölümlerin nüfus ile ilişkisi gösterilmektedir.
+
+📍Eğer ölümler diğerlerine göre nispeten küçük nüfusa sahipse bile yüksekse, bu ilçenin yüksek tehlikeli bir bölge olduğunu söyleyebiliriz. Eğer nüfus büyükse ve ölümler nispeten azsa, bu bölgenin diğerlerinden daha güvenli olduğunu varsayabiliriz.
 
 ## Sonuçlar
 
