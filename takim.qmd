@@ -6,14 +6,14 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 # Takım Üyeleri
 
-1.  [Susku UZUN](/takim/suskuuzun.qmd) (Raichu)
+1.  [Susku UZUN](/takim/suskuuzun.qmd) (Pikachu) ![](https://clipart.info/images/ccovers/1528080678pikachu-emoji-pokemon-png.png){width="20"}
 
-2.  [Enes Mert ACAR](/takim/enesmertacar.qmd) (Machoke)
+2.  [Enes Mert ACAR](/takim/enesmertacar.qmd) (Pidgeotto) ![](https://vignette.wikia.nocookie.net/pkmnshuffle/images/5/57/Pidgeotto.png/revision/latest?cb=20170407192409){width="20"}
 
-3.  [Mertcan ÇALDAR](/takim/mertcancaldar.qmd) (Bulbasaur)
+3.  [Mertcan ÇALDAR](/takim/mertcancaldar.qmd) (Bulbasaur) ![](https://p7.hiclipart.com/preview/378/388/10/bulbasaur-venusaur-pokemon-smiley-yellow-others.jpg){width="20" height="19"}
 
-4.  [Çağla Hazal MÜVEZZİ](/takim/caglahazalmuvezzi.qmd) (Mew)
+4.  [Çağla Hazal MÜVEZZİ](/takim/caglahazalmuvezzi.qmd) (Jigglypuff) ![](https://w7.pngwing.com/pngs/340/823/png-transparent-jigglypuff-pikachu-pokemon-igglybuff-pikachu-face-cat-like-mammal-head.png){width="29" height="19"}
 
-5.  [Bahadır AKGÜN](/takim/bahadirakgun.qmd) (Squirtle)
+5.  [Bahadır AKGÜN](/takim/bahadirakgun.qmd) (Squirtle) ![](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/100eef49-83c7-4ae7-a19d-9d2489477508/d9tkr3x-3044bfc6-252a-4791-b470-304a2e62d2e9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEwMGVlZjQ5LTgzYzctNGFlNy1hMTlkLTlkMjQ4OTQ3NzUwOFwvZDl0a3IzeC0zMDQ0YmZjNi0yNTJhLTQ3OTEtYjQ3MC0zMDRhMmU2MmQyZTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lWOUI8kN6bHF-AMrxQG0hHWpDHMhuWD6OytcTAcWKRQ){width="20"}
 
-6.  [Süleyman ÖZDEMİR](/takim/suleymanozdemir.qmd) (Charmander)
+6.  [Süleyman ÖZDEMİR](/takim/suleymanozdemir.qmd) (Charmander) ![](https://www.kindpng.com/picc/m/117-1172479_charmander-pokemon-face-clipart-png-download-pokemon-charmander.png){width="20" height="19"}

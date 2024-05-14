@@ -5,7 +5,7 @@ sidebar: false
 
 MUY665-İş Analitiği dersi Pokemon Takımı sayfamıza hoş geldiniz.
 
-**Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.**
+**Lütfen faaliyetlerimizi görmek için bizi takipte kalın.**
 
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGZ2bjJ3cW14YjYxZ2czYXNzb3ViZHN2cnA0ZHcyYTg0dXpmYnd0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8UGGp7rQvfhe63HrFq/giphy.gif){fig-align="center"}
 
@@ -23,16 +23,12 @@ MUY665-İş Analitiği dersi Pokemon Takımı sayfamıza hoş geldiniz.
 
 6.  [Süleyman ÖZDEMİR](/takim/suleymanozdemir.qmd) (Charmander) ![](https://www.kindpng.com/picc/m/117-1172479_charmander-pokemon-face-clipart-png-download-pokemon-charmander.png){width="20" height="19"}
 
-## Proje Adı
+**Biz pokemon'lar kimiz? Tıklayın 😏**
 
-MUY660-İş Analitiği iyileştirme çalışmaları (örnek)
+## Proje Adı 
+
+**İstanbul Büyük Şehir Belediyesi / Deprem Senaryosu Analiz Sonuçları**
 
 ## Proje Konusu
 
-Örnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
-
-## Veri Seti Hakkında Özet Bilgi
-
-## Sonuçlar
-
-Burada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır.
+Bu projede MUY665-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda İstanbul Büyükşehir Belediyesi Açık Veri Portalı'ndan veriler araştırılmıştır ve "Deprem Senaryosu Analiz Sonuçları" verisini toplayarak bir veri seti oluşturduk. Analiz için Keşifsel Veri Analizi yöntemleri kullanılarak çalışmalar yapıldı.

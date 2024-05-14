@@ -12,9 +12,17 @@ format:
 
 # Proje Genel Bakış ve Kapsamı 📑
 
+Projede, İstanbul'daki olası bir depremin neden olabileceği hasarları ve kayıpları detaylandıran bir analiz gerçekleştirilmiştir. Bu analiz, ilçe ve mahalle bazında değişen yapısal hasarları, can kaybı ve yaralanma sayılarını içermektedir.
+
+Kullanılan veri seti, binaların hasar durumlarını (çok ağır hasarlı, ağır hasarlı, orta hasarlı ve hafif hasarlı), can kaybı ve yaralı sayılarını, altyapı hasarlarını (doğalgaz, içme suyu ve atık su boruları) ve geçici barınma ihtiyaçlarını kapsamaktadır. Ayrıca, nüfus sayısı ile toplam hasarlı binalar, can kaybı ve hasarlı binalara göre can kaybı oranları da incelenmiştir.
+
+R programlama dili kullanılarak yapılan bu analiz, deprem sonrası acil müdahale ve uzun vadeli iyileştirme çalışmalarının planlanmasında önemli bir referans noktası oluşturmakta. Bu analiz ile ilçe ve mahalle bazında önceliklendirme yapılabilir, böylece en riskli bölgelere hızlı müdahale ve kaynakların etkin dağılımı sağlanabilir. Bu çalışma, yerel yönetimler, kurtarma ekipleri ve politika yapıcılar için değerli bilgiler sunarak, afet risk yönetiminin ve dayanıklılığın artırılmasına katkıda bulunmayı amaçlamaktadır.
+
 # Veri 📉
 
 ```{r message=FALSE}
+#| code-fold: true
+#| code-summary: "Kod Göster"
     library(dplyr)
     library(readr)
     library(knitr)
@@ -65,22 +73,58 @@ Veri için kullanılan kaynağa aşağıdaki linkten erişebilirsiniz;
 
 ## Veri Hakkında Genel Bilgiler
 
-eklenecek
+-   İlce_adi: Senaryoya göre depremden etkilenecek ilçenin ismini içerir.
 
-## Tercih Sebebi
+-   mahalle_adi: Senaryoya göre depremden etkilenecek mahallenin ismini içerir.
 
-eklenecek
+-   mahalle_koy_uavt: Senaryoya göre depremden etkilenecek mahalle ve köyün ulusal adres veri tabanını içerir.
 
-# Analiz
+-   cok_agir_hasarli_bina_sayisi: Senaryoya göre depremden etkilenecek çok ağır hasarlı bina sayısını içerir.
 
-```{r message=FALSE}
+-   agir_hasarli_bina_sayisi: Senaryoya göre depremden etkilenecek ağır hasarlı bina sayısını içerir.
+
+-   orta_hasarli_bina_sayisi: Senaryoya göre depremden etkilenecek orta hasarlı bina sayısını içerir.
+
+-   hafif_hasarli_bina_sayisi: Senaryoya göre depremden etkilenecek hafif hasarlı bina sayısını içerir.
+
+-   can_kaybi_sayisi: Senaryoya göre depremde oluşacak can kaybı sayısını içerir.
+
+-   agir_yarali_sayisi: Senaryoya göre depremde oluşacak ağır yaralı sayısını içerir.
+
+-   hastanede_tedavi_sayisi: Senaryoya göre depremden sonra hastanede tedavi sayısını içerir.
+
+-   hafif_yarali_sayisi: Senaryoya göre depremde oluşacak hafif yaralı sayısını içerir.
+
+-   dogalgaz_boru_hasari: Senaryoya göre depremde hasar gören doğalgaz boru hattı sayısını içerir.
+
+-   icme_suyu_boru_hasari: Senaryoya göre depremde hasar gören içme suyu boru hattı sayısını içerir.
+
+-   atik_su_boru_hasari: Senaryoya göre depremde hasar gören atık su boru hattı sayısını içerir.
+
+-   gecici_barinma: Senaryoya göre deprem sonrasında oluşacak geçici barınma sayısını içerir.
+
+-   nüfus_sayısı: Senaryoya göre deprem sonrasında ilçe bazlı toplam hasarlı bina sayısı
+
+-   toplam_hasarlı_binalar: Senaryoya göre deprem sonrasında ilçe bazlı toplam hasarlı bina sayısı
+
+-   toplam_can_kaybı: Senaryoya göre deprem sonrasında ilçe bazlı ölü sayısı
+
+-   can_kaybı_nüfus: Senaryoya göre deprem sonrasında ilçe bazlı ölü sayısı/ilçenin toplam nüfusuna oranı
+
+-   can_kaybı_hasarlı_bina: Senaryoya göre deprem sonrasında ilçe bazlı ölü sayısı/ilçenin toplam hasarlı bina sayısına oranı
+
+# Analiz 📊
+
+```{r setup, warning=FALSE}
+#| code-fold: true
+#| code-summary: "Kod Göster"
 library(readxl)
 library(stringi)
 library(stringr)
 library(ggplot2)
 library(ggthemes)
 
-avg_health1 <- ggplot(district_avg, aes(x = ilce_adi)) +
+  avg_health1 <- ggplot(district_avg, aes(x = ilce_adi)) +
   geom_line(aes(y = avg_can_kaybi, group = 1, color = "Can Kaybı"), size = 1) +
   geom_line(aes(y = avg_agir_yarali, group = 1, color = "Ağır Yaralı"), size = 1) +
   geom_line(aes(y = avg_hafif_yarali, group = 1, color = "Hafif Yaralı" ), size = 1) +
@@ -104,6 +148,8 @@ avg_health1 <- ggplot(district_avg, aes(x = ilce_adi)) +
 ## Keşifsel Veri Analizi
 
 ```{r message=FALSE}
+#| code-fold: true
+#| code-summary: "Kod Göster"
 
 avg_health1
 ```
@@ -113,6 +159,8 @@ avg_health1
 ## İlçelere Göre Depremin Etkisi ❗
 
 ```{r message=FALSE}
+#| code-fold: true
+#| code-summary: "Kod Göster"
 library(ggthemes)
 
 building_avg_line <- ggplot(district_avg, aes(x = ilce_adi)) +
@@ -137,9 +185,11 @@ building_avg_line
 
 ```
 
-Bu grafik, her ilçenin ortalama bina sayısını ve hasar gören binaların sınıflandırmasını göstermektedir. Önceki grafikle benzerlik göstermektedir, bu da **ölümler ile hasarlı bina sayısı arasında bir ilişki olabileceğini düşündürmektedir.**
+✔️Bu grafik, her ilçenin ortalama bina sayısını ve hasar gören binaların sınıflandırmasını göstermektedir. Önceki grafikle benzerlik göstermektedir, bu da **ölümler ile hasarlı bina sayısı arasında bir ilişki olabileceğini düşündürmektedir.**
 
 ```{r message=FALSE}
+#| code-fold: true
+#| code-summary: "Kod Göster"
 
 library(readxl)
 library(dplyr)
@@ -165,12 +215,44 @@ ggplot(nufus_excel, aes(x = ilce, y = toplam_can_kaybı)) +
   guides(size = guide_legend(override.aes = list(color = "darkred")))
 ```
 
-📍 Noktaların alanı bize ilçenin nüfus büyüklüğünü gösterir ve renkler, her ilçenin tehlike seviyelerini belirlenen eşik değerlere dayanarak gösterir.
+✔️Noktaların alanı bize ilçenin nüfus büyüklüğünü gösterir ve renkler, her ilçenin tehlike seviyelerini belirlenen eşik değerlere dayanarak gösterir.
 
-📍Bu alanda gerçekleşme ihtimali olan ölümlerin nüfus ile ilişkisi gösterilmektedir.
+✔️Bu alanda gerçekleşme ihtimali olan ölümlerin nüfus ile ilişkisi gösterilmektedir.
 
-📍Eğer ölümler diğerlerine göre nispeten küçük nüfusa sahipse bile yüksekse, bu ilçenin yüksek tehlikeli bir bölge olduğunu söyleyebiliriz. Eğer nüfus büyükse ve ölümler nispeten azsa, bu bölgenin diğerlerinden daha güvenli olduğunu varsayabiliriz.
+✔️Eğer ölümler diğerlerine göre nispeten küçük nüfusa sahipse bile yüksekse, bu ilçenin yüksek tehlikeli bir bölge olduğunu söyleyebiliriz. Eğer nüfus büyükse ve ölümler nispeten azsa, bu bölgenin diğerlerinden daha güvenli olduğunu varsayabiliriz.
 
-## Sonuçlar
+## Analiz Sonuçları
 
-# Sonuçlar ve Ana Çıkarımlar
+**Yaralanma/Can Kayıplarına Göre İlçe Bazında Değerlendirme:**
+
+📌**En Riskli İlçe**
+
+-   **Bahçelievler**: Bu ilçede toplam 1,633 can kaybı ve 879 ağır yaralı bulunmaktadır. Bu yüksek sayılar, Bahçelievler'i incelenen ilçeler arasında en riskli ilçe yapmaktadır.
+
+📌**En Risksiz İlçe**
+
+-   **Arnavutköy**: Bu ilçede hiç can kaybı veya ağır yaralı bulunmamaktadır. Bu durum, Arnavutköy'ü incelenen ilçeler arasında en risksiz ilçe olarak göstermektedir.
+
+Bu sonuçlar, ilgili ilçelerdeki acil durum hazırlıkları ve müdahale planlarını gözden geçirmek için önemli bilgiler sunar. Bahçelievler gibi yüksek risk taşıyan ilçelerde daha yoğun önlemlerin alınması, can ve mal kaybını azaltabilirken, Arnavutköy gibi risksiz ilçelerde mevcut önlemlerin yeterliliği değerlendirilebilir. ​
+
+**Ortalama Hasarlı Bina Sayısına Göre İlçe Bazında Değerlendirme:**
+
+📌Avcılar ve Bahçelievler gibi ilçeler, ortalama olarak en çok hasar gören ilçeler arasında yer alırken, Şile ve Çatalca gibi ilçeler daha az hasarla karşılaşmıştır. Bu bilgiler, ileride yapılacak müdahale ve iyileştirme çalışmaları için önemli bir rehber olabilir.
+
+**İlçelerin Nüfuslarına Göre Can Kaybı Değerlendirmesi:**
+
+-   **Bakırköy**: 232,759 nüfus ile toplam 1,046 can kaybı, nüfus başına 4.494 can kaybı oranı.
+
+-   **Fatih**: 443,995 nüfus ile toplam 1,484 can kaybı, nüfus başına 3.342 can kaybı oranı.
+
+-   **Adalar**: 23,512 nüfus ile toplam 76 can kaybı, nüfus başına 3.232 can kaybı oranı
+
+En düşük can kaybı oranlarına sahip ilçeler:
+
+-   **Şile**: 48,537 nüfus ile 0 can kaybı.
+
+-   **Çekmeköy**: 264,508 nüfus ile toplam 1 can kaybı, nüfus başına 0.004 can kaybı oranı.
+
+-   **Arnavutköy**: 282,488 nüfus ile 0 can kaybı.
+
+Bakırköy ve Fatih gibi yoğun nüfuslu ve yüksek oranda can kaybı yaşanmış ilçelerde, acil durum önlemleri ve altyapı iyileştirmeleri için öncelik verilmesi gerekebilir.
